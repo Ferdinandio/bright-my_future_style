@@ -1,0 +1,25 @@
+.pre-wrap {
+	white-space: pre-wrap;
+}
+
+.smallFont {
+	font-size: small;
+}
+
+ion-button, ion-card, ion-toolbar,
+ion-title, ion-grid, ion-row, ion-col {
+	outline: none;
+}
+
+ion-item, ion-list, .list-ios {
+	--background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
+}
+
+.my-custom-class .modal-wrapper {
+	width: 90%;
+	height: 30%;
+	position: absolute;
+	border-radius: 6px;
+	top: 15px;
+}

@@ -1,0 +1,51 @@
+<ion-content mode="ios" class="ion-padding">
+  <ion-list class="wrapper">
+    <ion-item lines="none" class="header">
+      <ion-title slot="start" class="ion-align-items-end ion-text-left ion-no-padding">
+        <ion-text class="headerFont">Регистрация пользователя</ion-text>
+      </ion-title>
+    </ion-item>
+
+    <ion-item lines="full" class="items">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input inputmode="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full" class="items">
+      <ion-label position="floating">Пароль</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full" class="items">
+      <ion-label position="floating">Повторите пароль</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item class="checkFont item-bg ion-no-padding ion-align-items-center" lines="none">
+      <ion-label class="white_color">
+        <ion-text>
+          Соглашаюсь с <a class="white_color" routerLink="/agreement">условиями</a>
+        </ion-text>
+      </ion-label>
+      <ion-checkbox class="checkbox ion-margin-vertical ion-no-margin" slot="start"></ion-checkbox>
+    </ion-item>
+
+    <ion-item mode="ios" class="transUp checkFont item-bg ion-no-padding ion-align-items-baseline" lines="none">
+      <ion-label class="ion-no-margin ion-text-wrap">
+        <ion-text class="white_color">Подтверждаю, что являюсь лицом старше <a href="#"></a>14 лет</ion-text>
+      </ion-label>
+      <ion-checkbox class="checkbox ion-no-margin" slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-button routerLink="/auth" shape="round" expand="block" class="ion-text-capitalize btn-reg">
+      Зарегистрироваться
+    </ion-button>
+    <ion-button routerLink="/auth" expand="block" fill="clear" class="ion-text-capitalize btn-cancel">
+      Отмена
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

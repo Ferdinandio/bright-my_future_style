@@ -1,0 +1,71 @@
+ion-toolbar {
+	--background: #fff;
+	ion-button {
+		--color: #222;
+		--background-activated: #fff;
+		--background: #fff;
+    height: 58px;
+		width: 60px;
+		ion-img {
+			position: relative;
+			left: -8px;
+		}
+	}
+}
+
+ion-content::part(background) {
+	--background: #fff;
+}
+
+ion-list {
+	.title {
+		font-family: "ClearSans";
+		font-weight: 900;
+		color: #c33e01;
+		font-size: 20px;
+    padding-left: 4px;
+	}
+	ion-img {
+    margin-top: 11px;
+	}
+	.user-number {
+		color: #222;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'ClearSans';
+    font-weight: 600;
+    line-height: 11px;
+	}
+
+	.text {
+    color: #7c5c4f;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    font-family: "ClearSans";
+    font-weight: 400;
+    padding: 17px 2px 18px;
+    line-height: 16px;
+	}
+
+	.btn-courses {
+		--background: linear-gradient(to top, rgb(195, 62, 1), rgb(217, 80, 16));
+		--background-activated: #ED8B53;
+		--background-hover: #ED8B53;
+		--box-shadow: 0px 20px 25px rgba(195,45,0,0.25);
+		font-family: "ClearSans";
+		font-size: 17px;
+		width: 89%;
+		height: 45px;
+		margin-bottom: 14px;
+		margin-top: 15px;
+		margin: auto;
+	}
+	.btn-support {
+		--color: #a83503;
+		font-family: "ClearSans";
+		width: 100%;
+		margin-bottom: 14px;
+	}
+}

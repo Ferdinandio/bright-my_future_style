@@ -1,0 +1,34 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-button routerLink="/menu">
+      <ion-img src="../../assets/icon/menu.svg"></ion-img>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios" class="ion-padding-horizontal">
+  <ion-list>
+    <ion-label class="title">
+      Ожидание регистрации
+    </ion-label>
+
+    <ion-img src="../../assets/wait.png" class="ion-padding"></ion-img>
+
+    <ion-label class="user-number">
+      Ваш номер пользователя: <ion-text color="success">351</ion-text>
+    </ion-label>
+
+    <ion-label class="text">
+      Если вы уже приобрели курс или хотите подробнее узнать о регистрации и покупке курсов. Вы можете написать в тех
+      поддержку.
+    </ion-label>
+
+    <ion-button routerLink="/learn-material" class="btn-courses" shape="round" expand="block">
+      <ion-text>Ознакомиться с курсами</ion-text>
+    </ion-button>
+
+    <ion-button routerLink="/menu/chat/chatting" class="btn-support" expand="block" fill="clear">
+      Написать в техподдержку
+    </ion-button>
+  </ion-list>
+</ion-content>
