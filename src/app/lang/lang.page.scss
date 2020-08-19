@@ -9,8 +9,8 @@
 	align-content: flex-end;
 
 	.logo {
-		margin-bottom: 11px;
-		width: 100%;
+    position: absolute;
+    top: 15%;
 		ion-img {
 			margin: 0 auto;
 			padding-right: 7px;
@@ -25,7 +25,8 @@
     text-align: center;
 		font-weight: 600;
 		width: 187px;
-		margin: 0 auto 67px;
+    position: absolute;
+    top: 43%;
 		ion-label {
 			text-align: center;
 			white-space: pre-wrap;
