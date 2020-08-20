@@ -60,13 +60,16 @@ ion-content::part(background) {
 				font-weight: 600;
 				letter-spacing: 0.4px;
 				line-height: 19px;
+				width: 100%;
 			}
 			.user-status {
 				font-size: 12px;
+				width: 100%;
 			}
 			.user-number {
 				color: #c33e01;
 				font-size: 13px;
+				width: 100%;
 			}
 		}
 	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="DESIGN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="personal-info_doc" transform="translate(-303.000000, -503.000000)">
+            <g id="Group-3" transform="translate(303.000000, 503.000000)">
+                <circle id="Oval-6" fill="#C33E01" cx="12" cy="12" r="12"></circle>
+                <g id="pencil-edit-button" transform="translate(6.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M7.05060578,2.38826739 L9.57189185,4.90953003 L4.67742389,9.80399799 L2.1575673,7.28273536 L7.05060578,2.38826739 Z M11.4850603,1.78019665 L10.3606637,0.655800082 C9.92612329,0.221259626 9.22051939,0.221259626 8.78450258,0.655800082 L7.7074431,1.73285956 L10.2287292,4.25414563 L11.4850603,2.99781449 C11.822091,2.66076032 11.822091,2.11722738 11.4850603,1.78019665 Z M0.838127851,10.8265729 C0.792243678,11.0330752 0.97868621,11.2181116 1.18521185,11.1678921 L3.99476207,10.4866832 L1.47490549,7.9654206 L0.838127851,10.8265729 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

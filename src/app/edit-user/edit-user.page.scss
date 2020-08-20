@@ -1,13 +1,133 @@
-.avatar {
-	margin: 0 auto 10px;
-	left: 0;
-	right: 0;
-	width: 48px;
-	height: 48px;
+.wrapper {
+	padding-right: 40px;
+	.title {
+		font-family: 'ClearSans';
+    font-size: 20.1px;
+    color: #c33e01;
+    font-weight: 600;
+    margin: 17px 0 0;
+	}
+
+	ion-item {
+		padding-left: 5px;
+		overflow: visible;
+		.input-label {
+			font-family: 'ClearSans';
+			font-size: 12px;
+		}
+		ion-input {
+			font-family: 'ClearSans';
+			font-size: 16px;
+		}
+		.city {
+			font-family: 'ClearSans';
+			font-size: 16px;
+			padding: 8px 0;
+		}
+		.grid-label {
+			font-family: 'ClearSans';
+			font-size: 11px;
+		}
+		ion-select {
+			font-family: 'ClearSans';
+			padding: 13px 0 3px;
+			min-width: 112px;
+			font-size: 16px;
+			border-bottom: 1px solid #ccc;
+		}
+		ion-select::part(icon) {
+			display: none;
+		}
+		ion-grid {
+			padding: 0;
+			ion-row {
+				max-height: 67px;
+				ion-col {
+					padding: 5px 0;
+					ion-icon {
+						margin: 36px 0 0 1px;
+						color: #ccc;
+					}
+					.age {
+						font-family: 'ClearSans';
+						max-height: 27px;
+						margin-top: 15px;
+						font-size: 16px;
+						border-bottom: 1px solid #ccc;
+					}
+				}
+				.age-col {
+					transform: translateX(10px);
+					min-width: 109px;
+				}
+			}
+		}
+	}
 }
 
-.createIcon {
-	position: relative;
-	top: -35px;
-	left: 27px;
+.btns-wrapper {
+	ion-button {
+		--background: #f2eae6;
+		--color: #b7a198;
+		--border-radius: 20px;
+    width: 98%;
+    margin-top: 12px;
+		.cloud {
+			position: relative;
+			top: -7px;
+		}
+		ion-label {
+			min-width: 177px;
+			text-align: left;
+			padding-left: 9px;
+			ion-text {
+				display: block;
+				width: 100%;
+				font-family: 'ClearSans';
+				font-size: 12.4px;
+				line-height: 17px;
+			}
+			.size-doc {
+				font-size: 10px;
+			}
+		}
+	}
+
+	.load-doc-btn {
+		min-height: 47px;
+	}
+
+	.load-photo-btn {
+		max-height: 42px;
+		ion-label {
+			min-width: 199px;
+			font-size: 12.4px;
+			padding-bottom: 10px;
+		}
+	}
+
+	ion-item {
+		ion-avatar {
+			margin: 7px auto;
+			height: 65px;
+			width: 65px;
+			ion-img {
+				position: relative;
+				top: -52px;
+				left: 51px;
+				height: 25px;
+				width: 25px;
+				border: 4px solid #fff;
+				box-sizing: content-box;
+			}
+		}
+	}
+
+	.send-button {
+		--background: #c33e01;
+		--color: #fff;
+    --box-shadow: 0px 10px 25px #c32d5d40;
+    margin: 16px 0 20px;
+    font-family: 'ClearSans';
+	}
 }
