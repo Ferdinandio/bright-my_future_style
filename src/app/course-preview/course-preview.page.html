@@ -1,34 +1,32 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
-      Просмотр материала
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-button routerLink="/menu">
-        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+<ion-header mode="ios" class="cp__header ion-no-border">
+  <ion-toolbar class="cp__toolbar">
+    <ion-button routerLink="/menu" class="cp__button">
+      <ion-img src="../../assets/icon/menu.svg" class="cp__img"></ion-img>
+    </ion-button>
   </ion-toolbar>
+
+  <ion-label class="title clearSans fontPageTitle">
+    Просмотр материала
+  </ion-label>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-img src="../../assets/icon/favicon.png"></ion-img>
-    <ion-badge>
-      <ion-icon class="book" name="book"></ion-icon>
-      <small>2 Этапа обучения</small>
-    </ion-badge>
-    <ion-card-header>
-      <ion-card-subtitle>Вводный курс для муниципальных координаторов программ наставничества молодёжи в ТСЖ</ion-card-subtitle>
+<ion-content mode="ios" class="ion-padding-horizontal">
+  <ion-card routerLink="/course-preview" class="cp__card ion-no-margin">
+    <ion-img src="../../assets/icon/favicon.png" class="cp__card_img"></ion-img>
+    <ion-card-header class="cp__card_header ion-no-padding">
+      <ion-card-subtitle class="cp__card_headerSubtitle clearSans">Вводный курс для муниципальных координаторов программ наставничества молодёжи в&nbsp;ТСЖ</ion-card-subtitle>
     </ion-card-header>
+    <ion-badge class="cp__card_badge clearSans ion-no-padding">
+      <ion-img src="../../assets/icon/combinedShape-blue.png" class="cp__card_badgeImg"></ion-img>
+      <ion-text class="cp__card_badge-blue">2 Этапа обучения</ion-text>
+    </ion-badge>
   </ion-card>
-  <ion-button class="ion-padding-horizontal" expand="block" shape="round">
-    О программе
-    <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+  <ion-button class="cp__btn clearSans ion-padding-horizontal ion-margin" expand="block" shape="round">
+    <ion-label class="cp__btn_label" slot="start">О программе</ion-label>
+    <ion-icon color="medium" slot="end" name="chevron-forward-outline"></ion-icon>
   </ion-button>
-  <ion-button routerLink="concept" class="ion-padding-horizontal" expand="block" shape="round">
-    Концепция наставничества
-    <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+  <ion-button routerLink="concept" class="cp__btn clearSans ion-padding-horizontal ion-margin" expand="block" shape="round">
+    <ion-label class="cp__btn_label" slot="start">Концепция наставничества</ion-label>
+    <ion-icon color="medium" slot="end" name="chevron-forward-outline"></ion-icon>
   </ion-button>
 </ion-content>

@@ -6,8 +6,7 @@
 	font-size: small;
 }
 
-ion-button, ion-card, ion-toolbar,
-ion-title, ion-grid, ion-row, ion-col {
+* {
 	outline: none;
 }
 
@@ -32,4 +31,11 @@ ion-item, ion-list, .list-ios {
 	font-weight: 900;
 	color: #c33e01;
 	font-size: 20px;
+}
+
+// buttons
+
+.btn_witeFont {
+	font-size: 16px;
+	color: #fff;
 }
