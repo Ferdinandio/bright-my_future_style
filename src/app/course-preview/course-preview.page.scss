@@ -17,6 +17,7 @@ ion-content::part(background) {
 			.cp__img {
 				position: relative;
 				left: -8px;
+				filter: brightness(0.4);
 			}
 		}
 	}
@@ -71,6 +72,7 @@ ion-content::part(background) {
 
 .cp__btn {
 	--background: #F2EAE7;
+	--background-activated: #F2EAE7;
 	--color: #535353;
 	font-size: 14px;
 	font-weight: 600;
