@@ -1,27 +1,72 @@
-ion-img {
-	height: 100px;
+ion-content::part(background) {
+	--background: #faf7f7;
 }
 
-ion-card {
+.lm__header {
+	background: #faf7f7;
+	padding-bottom: 5px;
+	.lm__toolbar {
+		--background: #faf7f7;
+		.lm__button {
+			--color: #222;
+			--background-activated: #faf7f7;
+			--background: #faf7f7;
+			height: 69px;
+			width: 60px;
+			margin-bottom: -13px;
+			.lm__img {
+				position: relative;
+				left: -8px;
+			}
+		}
+	}
+	.title {
+		background: #faf7f7;
+		padding-left: 20px;
+		letter-spacing: 0.62px;
+	}
+}
+
+.lm__card {
 	position: relative;
-}
-
-.book {
-	width: 100%;
-}
-
-ion-badge {
-	position: absolute;
-	top: -1px;
-	right: 20px;
-	white-space: pre-wrap;
-	width: 60px;
-	border-radius: 0;
-	background: #fff;
-	color: #3880ff
-}
-
-.x-smallFont {
-	font-size: 9px;
-	line-height: 12px;
+	margin-top: 12px;
+	min-height: 223px;
+	border-radius: 5px;
+	.lm__card_img {
+		height: 100px;
+	}
+	.lm__card_badge {
+		position: absolute;
+		top: -1px;
+		right: 20px;
+		white-space: pre-wrap;
+		width: 60px;
+		background: #fff;
+		color: transparent;
+		border-radius: 0;
+		font-size: 9px;
+		line-height: 13px;
+		letter-spacing: 0.6px;
+		.lm__card_badgeImg {
+			height: 24px;
+			padding: 9px 0 3px;
+		}
+		.lm__card_badge-blue {
+			color: #3880ff;
+		}
+		.lm__card_badge-brown {
+			color: #82300D;
+		}
+		.lm__card_badge-orange {
+			color: #F27415;
+		}
+	}
+	.lm__card_header {
+		.lm__card_headerSubtitle {
+			padding: 10px 24px;
+			text-transform: unset;
+			font-size: 17px;
+			line-height: 18px;
+		}
+	}
 }
