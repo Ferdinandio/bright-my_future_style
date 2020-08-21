@@ -1,14 +1,108 @@
-.question {
+ion-content::part(background) {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #faf7f7;
+	background-position: top;
+	background-size: 123% 100px;
+}
+
+
+.test__toolbar {
+	--background: rgba(0, 0, 0, 0);
+	margin-bottom: 58px;
+	.test__button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 50px;
+    margin: -5px 0 0 -9px;
+		.test__img {
+			position: relative;
+			left: -8px;
+			top: -2px;
+			filter: opacity(0.5);
+		}
+	}
+	.test__label {
+		font-size: 16px;
+		color: #fff;
+    margin-left: 20%;
+	}
+}
+
+.test__title {
+	background: #faf7f7;
+	font-weight: 900;
+	color: #c33e01;
+	font-size: 17px;
+	line-height: 23px;
+	// letter-spacing: -0.4px;
+}
+
+.test__subtitle {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+
+.test__btn {
+	--background: #B3481E;
+	--background-activated: #b16d52;
+	--color: #FFE3D6;
+	--box-shadow: 0px 10px 25px #c32d5d40;
+}
+
+.test__question {
 	margin: 20px 0;
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
-	min-height: 180px;
+	min-height: 150px;
 	background: #fff;
 }
 
-.question__request {
-	margin: 0;
-	padding-left: 90px;
-	white-space: pre-wrap;
+.test__question_badge {
+	--background: #50A561;
+	--color: #fff;
+	--padding-bottom: 3px;
+	--padding-top: 4px;
+	--padding-start: 11px;
+	--padding-end: 11px;
+	font-weight: 400;
 }
+
+.test__question_request {
+	white-space: pre-wrap;
+	line-height: 11px;
+	margin-left: auto;
+	max-width: 86px;
+	color: #aaa;
+	.test__question_request-text {
+		font-size: 12px;
+	}
+}
+
+.test__textarea {
+	font-size: 12px;
+	padding-right: 22px;
+	.test__textarea_text {
+    padding-top: 4px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
