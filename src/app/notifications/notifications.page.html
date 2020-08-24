@@ -1,36 +1,81 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="ion-padding">
+  <ion-toolbar class="notifications__toolbar">
+    <ion-button routerLink="/menu" class="notifications__button">
+      <ion-img src="../../assets/icon/arrow-white-back.png" class="notifications__img"></ion-img>
+    </ion-button>
+    <ion-label class="notifications__title clearSans">
       Уведомления
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-button routerLink="/menu">
-        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item>
-    <ion-label>
-      Назначение руководителя
-      <p>Вам был назначен наставник " "</p>
-    </ion-label>
-    <ion-badge class="badge">
-      <div>17.06.2020</div>
-      <div>16:45:05</div>
-    </ion-badge>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Вам доступен новый курс
-      <p>Изучите курс "Вводный курс для муниципальных координаторов программ наставничества молодежи в ТСЖ" в разделе "Материалы для изучения"</p>
-    </ion-label>
-    <ion-badge class="badge">
-      <div>17.06.2020</div>
-      <div>16:41:02</div>
-    </ion-badge>
-  </ion-item>
+<ion-content mode="ios" class="ion-padding">
+  <ion-list>
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Назначение руководителя</ion-text>
+        <ion-text class="notifications__text pre-wrap">Вам был назначен наставник "&nbsp;"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:45:05</ion-text>
+      </ion-badge>
+    </ion-item>
+
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Вам доступен новый курс</ion-text>
+        <ion-text class="notifications__text pre-wrap">Изучите курс "Вводный курс для муниципальных координаторов
+          программ наставничества молодежи в ТСЖ" в разделе "Материалы для изучения"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:41:02</ion-text>
+      </ion-badge>
+    </ion-item>
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Назначение руководителя</ion-text>
+        <ion-text class="notifications__text pre-wrap">Вам был назначен наставник "&nbsp;"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:45:05</ion-text>
+      </ion-badge>
+    </ion-item>
+
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Вам доступен новый курс</ion-text>
+        <ion-text class="notifications__text pre-wrap">Изучите курс "Вводный курс для муниципальных координаторов
+          программ наставничества молодежи в ТСЖ" в разделе "Материалы для изучения"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:41:02</ion-text>
+      </ion-badge>
+    </ion-item>
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Назначение руководителя</ion-text>
+        <ion-text class="notifications__text pre-wrap">Вам был назначен наставник "&nbsp;"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:45:05</ion-text>
+      </ion-badge>
+    </ion-item>
+
+    <ion-item class="notifications__item ion-no-padding" lines="full">
+      <ion-label>
+        <ion-text class="notifications__label pre-wrap">Вам доступен новый курс</ion-text>
+        <ion-text class="notifications__text pre-wrap">Изучите курс "Вводный курс для муниципальных координаторов
+          программ наставничества молодежи в ТСЖ" в разделе "Материалы для изучения"</ion-text>
+      </ion-label>
+      <ion-badge class="notifications__badge">
+        <ion-text class="notifications__date">17.06.2020</ion-text>
+        <ion-text class="notifications__time">16:41:02</ion-text>
+      </ion-badge>
+    </ion-item>
+  </ion-list>
 </ion-content>

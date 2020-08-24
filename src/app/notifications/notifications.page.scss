@@ -1,16 +1,67 @@
-.badge {
+ion-content::part(background) {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #faf7f7;
+	background-position: top;
+	background-size: 123% 100px;
+	margin-top: -111px;
+}
+
+
+.notifications__toolbar {
+	--background: rgba(0, 0, 0, 0);
+	margin-bottom: 35px;
+	--border-width: 0 !important;
+	.notifications__button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 50px;
+    margin: -5px 0 0 -9px;
+		.notifications__img {
+			position: relative;
+			left: -8px;
+			top: -2px;
+			filter: opacity(0.5);
+		}
+	}
+	.notifications__title {
+		margin-left: 19%;
+		font-size: 16px;
+		color: #faf7f7;
+	}
+}
+
+.notifications__item {
+	overflow: visible;
+}
+
+.notifications__label {
+	display: block;
+	font-weight: 600;
+}
+
+.notifications__text {
+	display: block;
+	font-size: 13px;
+	color: #8D817B;
+}
+
+.notifications__badge {
 	padding: 0;
 	border-radius: 0;
 	color: #92949c;
-	background-color: white;
-	font-size: x-small;
-	margin: 10px 0 auto;
-}
-
-p {
-	white-space: pre-wrap;
-}
-
-ion-button {
-	outline: none;
+	background-color: #faf7f7;
+	font-size: 10px;
+	transform: translateX(10px);
+	margin: 18px 0 auto;
+	.notifications__date {
+		display: block;
+		text-align: right;
+		font-weight: 400;
+	}
+	.notifications__time {
+		display: block;
+		text-align: right;
+		font-weight: 400;
+	}
 }
