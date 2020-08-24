@@ -3,7 +3,7 @@ ion-content::part(background) {
 }
 
 ion-header {
-	color: #fff;
+	background: #fff;
 }
 .eu__toolbar {
 	--background: rgba(0, 0, 0, 0);
@@ -50,18 +50,21 @@ ion-header {
 			font-family: 'ClearSans';
 			font-size: 16px;
 			padding: 8px 0;
+			color: #222;
 		}
 		.grid-label {
 			font-family: 'ClearSans';
 			font-size: 11px;
 		}
 		ion-select {
-			--placeholder-color: #222;
 			font-family: 'ClearSans';
 			padding: 13px 0 3px;
-			min-width: 112px;
+			min-width: 120%;
 			font-size: 16px;
 			border-bottom: 1px solid #ccc;
+		}
+		ion-select::part(text) {
+			color: #222;
 		}
 		ion-select::part(icon) {
 			display: none;
