@@ -10,7 +10,6 @@ ion-content::part(background) {
 .notifications__toolbar {
 	--background: rgba(0, 0, 0, 0);
 	margin-bottom: 35px;
-	--border-width: 0 !important;
 	.notifications__button {
     --background-activated: rgba(0, 0, 0, 0);
     --background: rgba(0, 0, 0, 0);
@@ -38,6 +37,7 @@ ion-content::part(background) {
 .notifications__label {
 	display: block;
 	font-weight: 600;
+	color: #222;
 }
 
 .notifications__text {

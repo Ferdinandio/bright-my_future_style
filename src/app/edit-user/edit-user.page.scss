@@ -1,3 +1,28 @@
+ion-content::part(background) {
+	--background: #fff;
+}
+
+ion-header {
+	color: #fff;
+}
+.eu__toolbar {
+	--background: rgba(0, 0, 0, 0);
+	.eu__button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background-hover: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 50px;
+    margin: -5px 0 0 -9px;
+		.eu__img {
+			position: relative;
+			left: -8px;
+			top: -2px;
+			filter: brightness(0.4);
+		}
+	}
+}
+
 .wrapper {
 	padding-right: 40px;
 	.title {
@@ -11,6 +36,7 @@
 	ion-item {
 		padding-left: 5px;
 		overflow: visible;
+		--border-color: #ccc;
 		.input-label {
 			font-family: 'ClearSans';
 			font-size: 12px;
@@ -18,6 +44,7 @@
 		ion-input {
 			font-family: 'ClearSans';
 			font-size: 16px;
+			color: #222;
 		}
 		.city {
 			font-family: 'ClearSans';
@@ -29,6 +56,7 @@
 			font-size: 11px;
 		}
 		ion-select {
+			--placeholder-color: #222;
 			font-family: 'ClearSans';
 			padding: 13px 0 3px;
 			min-width: 112px;
@@ -68,6 +96,8 @@
 .btns-wrapper {
 	ion-button {
 		--background: #f2eae6;
+		--background-activated: #f2eae6;
+		--background-hover: #f2eae6;
 		--color: #b7a198;
 		--border-radius: 20px;
     width: 98%;
@@ -125,6 +155,8 @@
 
 	.send-button {
 		--background: #c33e01;
+		--background-activated: #aa3f0e;
+		--background-hover: #aa3f0e;
 		--color: #fff;
     --box-shadow: 0px 10px 25px #c32d5d40;
     margin: 16px 0 20px;

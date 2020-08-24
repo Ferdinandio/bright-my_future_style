@@ -1,8 +1,8 @@
-<ion-header mode="ios" class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+<ion-header mode="ios" class="ion-padding-top ion-padding-horizontal ion-no-border">
+  <ion-toolbar class="eu__toolbar">
+    <ion-button routerLink="/menu" class="eu__button">
+      <ion-img src="../../assets/icon/arrow-white-back.png" class="eu__img"></ion-img>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -41,7 +41,7 @@
 
     <ion-item routerLink="federal" detailIcon="">
       <ion-label position="stacked" class="input-label" color="medium">Город</ion-label>
-      <ion-text class="city">Самарская область</ion-text>
+      <ion-text class="city" color="dark">Самарская область</ion-text>
     </ion-item>
 
     <ion-item lines="none">

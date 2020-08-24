@@ -33,6 +33,7 @@ ion-content::part(background) {
 	margin-top: 12px;
 	min-height: 223px;
 	border-radius: 5px;
+	background: #fff;
 	.cp__card_img {
 		height: 100px;
 	}
@@ -73,6 +74,7 @@ ion-content::part(background) {
 .cp__btn {
 	--background: #F2EAE7;
 	--background-activated: #F2EAE7;
+	--background-hover: #F2EAE7;
 	--color: #535353;
 	font-size: 14px;
 	font-weight: 600;
