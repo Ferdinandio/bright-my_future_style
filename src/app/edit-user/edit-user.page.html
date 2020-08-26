@@ -1,4 +1,4 @@
-<ion-header mode="ios" class="ion-padding-top ion-padding-horizontal ion-no-border">
+<ion-header mode="ios" class="eu__header ion-padding-top ion-padding-horizontal ion-no-border">
   <ion-toolbar class="eu__toolbar">
     <ion-button routerLink="/menu" class="eu__button">
       <ion-img src="../../assets/icon/arrow-white-back.png" class="eu__img"></ion-img>
@@ -8,59 +8,59 @@
 
 <ion-content mode="ios">
   <ion-list class="wrapper ion-padding-horizontal">
-    <ion-item lines="none">
+    <ion-item class="eu__item" lines="none">
       <ion-label class="title">
         Заполните свои данные
       </ion-label>
     </ion-item>
 
-    <ion-item class="ion-margin-top">
+    <ion-item class="eu__item ion-margin-top">
       <ion-label position="stacked" class="input-label" color="medium">Фамилия</ion-label>
-      <ion-input>Классен</ion-input>
+      <ion-input class="eu__input">Классен</ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="eu__item">
       <ion-label position="stacked" class="input-label" color="medium">Имя</ion-label>
-      <ion-input>Дмитрий</ion-input>
+      <ion-input class="eu__input">Дмитрий</ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="eu__item">
       <ion-label position="stacked" class="input-label" color="medium">Отчество</ion-label>
-      <ion-input>Петрович</ion-input>
+      <ion-input class="eu__input">Петрович</ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="eu__item">
       <ion-label position="stacked" class="input-label" color="medium">E-mail</ion-label>
-      <ion-input type="email">d@yandex.ru</ion-input>
+      <ion-input class="eu__input" type="email">d@yandex.ru</ion-input>
     </ion-item>
 
-    <ion-item>
+    <ion-item class="eu__item">
       <ion-label position="stacked" class="input-label" color="medium">Телефон</ion-label>
-      <ion-input inputmode="numeric" type="number">+7(929) 717-63-02</ion-input>
+      <ion-input class="eu__input" inputmode="numeric" type="number">+7(929) 717-63-02</ion-input>
     </ion-item>
 
-    <ion-item routerLink="federal" detailIcon="">
+    <ion-item class="eu__item" routerLink="federal" detailIcon="">
       <ion-label position="stacked" class="input-label" color="medium">Город</ion-label>
       <ion-text class="city" color="dark">Самарская область</ion-text>
     </ion-item>
 
-    <ion-item lines="none">
-      <ion-grid>
-        <ion-row>
-          <ion-col size="5">
-            <ion-label class="grid-label" position="stacked" color="medium">Пол</ion-label>
-            <ion-select value="male">
+    <ion-item class="eu__item" lines="none">
+      <ion-grid class="eu__grid">
+        <ion-row class="eu__row">
+          <ion-col class="eu__col" size="5">
+            <ion-label position="stacked" color="medium">Пол</ion-label>
+            <ion-select class="eu__select" value="male">
               <ion-select-option value="male">Мужской</ion-select-option>
               <ion-select-option value="female">Женский</ion-select-option>
             </ion-select>
           </ion-col>
-          <ion-col>
-            <ion-icon name="chevron-down"></ion-icon>
+          <ion-col class="eu__col">
+            <ion-icon class="eu__icon" name="chevron-down"></ion-icon>
           </ion-col>
-          <ion-col></ion-col>
-          <ion-col class="age-col" size="5">
+          <ion-col class="eu__col"></ion-col>
+          <ion-col class="eu__col age-col" size="5">
             <ion-label class="grid-label" position="stacked" color="medium">Возраст</ion-label>
-            <ion-input class="age" min="14" inputmode="numeric" value="14" type="number"></ion-input>
+            <ion-input class="eu__input age" min="14" inputmode="numeric" value="14" type="number"></ion-input>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -68,30 +68,30 @@
   </ion-list>
 
   <ion-list class="btns-wrapper ion-padding-horizontal ion-margin-horizontal">
-    <ion-button class="load-doc-btn">
+    <ion-button class="eu__button load-doc-btn">
       <ion-img src="../../assets/icon/doc.svg" class="cloud" slot="start"></ion-img>
-      <ion-label>
-        <ion-text>document.png</ion-text>
-        <ion-text class="size-doc">1756 Кб</ion-text>
+      <ion-label class="eu__label">
+        <ion-text class="eu__text">document.png</ion-text>
+        <ion-text class="eu__text size-doc">1756 Кб</ion-text>
       </ion-label>
       <ion-img src="../../assets/icon/edit-doc.svg" slot="end"></ion-img>
     </ion-button>
 
-    <ion-button class="load-photo-btn" expand="block">
+    <ion-button class="eu__button load-photo-btn" expand="block">
       <ion-img src="../../assets/icon/doc.svg" class="cloud" slot="start"></ion-img>
-      <ion-label>
+      <ion-label class="eu__label">
         Загрузить документ
       </ion-label>
     </ion-button>
 
-    <ion-item lines="none">
-      <ion-avatar>
+    <ion-item class="eu__item" lines="none">
+      <ion-avatar class="eu__avatar">
         <img src="../../assets/icon/favicon.png">
-        <ion-img src="../../assets/icon/edit-doc.svg" class="createIcon"></ion-img>
+        <ion-img src="../../assets/icon/edit-doc.svg" class="eu__img"></ion-img>
       </ion-avatar>
     </ion-item>
 
-    <ion-button routerLink="/menu" class="send-button" shape="round" expand="block">
+    <ion-button routerLink="/menu" class="eu__button send-button" shape="round" expand="block">
       Отправить
     </ion-button>
   </ion-list>

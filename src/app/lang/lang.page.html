@@ -1,29 +1,29 @@
 <ion-content mode="ios">
   <ion-list class="wrapper">
     <ion-item class="logo" lines="none">
-      <ion-img src="../../assets/logo-min.png"></ion-img>
+      <ion-img src="../../assets/logo-min.png" class="img"></ion-img>
     </ion-item>
 
     <ion-item class="slogan" lines="none">
-      <ion-label>Помогаем найти своё место в жизни</ion-label>
+      <ion-label class="label">Помогаем найти своё место в жизни</ion-label>
     </ion-item>
 
     <ion-item class="select-lang" lines="none">
-      <ion-label>
+      <ion-label class="label">
         Выберите язык
       </ion-label>
     </ion-item>
 
-    <ion-segment value="rus">
-      <ion-segment-button value="rus">
+    <ion-segment value="rus" class="segment">
+      <ion-segment-button value="rus" class="segment-button">
         <ion-label>Русский</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="eng">
+      <ion-segment-button value="eng" class="segment-button">
         <ion-label>English</ion-label>
       </ion-segment-button>
     </ion-segment>
 
-    <ion-button routerLink="/auth" fill="clear" expand="block">
+    <ion-button routerLink="/auth" class="button" fill="clear" expand="block">
       <ion-img src="../../assets/icon/arrow-long.png"></ion-img>
     </ion-button>
   </ion-list>

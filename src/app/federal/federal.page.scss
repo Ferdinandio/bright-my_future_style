@@ -1,38 +1,38 @@
-ion-toolbar {
+.federal-toolbar {
 	--background:#c33e01;
-	ion-button {
+	.federal-button {
 		--background:#c33e01;
 		--background-activated: #c33e01;
 		--color: #fff;
 		height: 40px;
-		ion-icon {
+		.federal-icon {
 			color: #fff;
 			height: 16px;
 			transform: translateX(14px);
 		}
 	}
-	ion-button::part(native) {
+	.federal-button::part(native) {
 		box-shadow: none;
 	}
 }
 
-ion-content::part(background) {
+.federal-content::part(background) {
 	background: #fff;
 }
 
-ion-content {
+.federal-content {
 	font-size: 0;
-	ion-item {
+	.federal-item {
 		font-family: 'ClearSans';
 		font-size: 16px;
 		color: #222;
 	}
-	ion-item::part(native) {
+	.federal-item::part(native) {
 		padding: 5px 2px 7px 12px;
 		margin: 0px;
 		width: 100%;
 	}
-	ion-item::part(detail-icon) {
+	.federal-item::part(detail-icon) {
 		display: none;
 	}
 }

@@ -1,7 +1,7 @@
-ion-toolbar {
+.agree-toolbar {
 	--background: #faf7f7;
 	overflow: visible;
-	ion-button {
+	.agree-button {
     --background: #faf7f7;
     --background-activated: #faf7f7;
     transform: rotate(180deg);
@@ -9,7 +9,7 @@ ion-toolbar {
     height: 21px;
     position: fixed;
 		left: 2px;
-		ion-img {
+		.agree-img {
 			filter: invert(90%);
 		}
 	}
@@ -19,9 +19,9 @@ ion-content::part(background) {
 	--background: #faf7f7;
 }
 
-ion-list {
+.agree-list {
 	font-family: 'ClearSans';
-	ion-list-header {
+	.agree-list-header {
 		--color: #c33e01;
     font-size: 20px;
     width: 90%;
@@ -31,9 +31,9 @@ ion-list {
 		align-items: center;
 		margin-bottom: 5px;
 	}
-	ion-item {
+	.agree-item {
 		margin-top: -5px;
-		ion-label {
+		.agree-label {
 			overflow: visible;
 			.subtitle {
 				font-family: 'ClearSans';

@@ -10,19 +10,19 @@
   </ion-grid>
   <ion-list class="bottom ion-padding-horizontal">
     <ion-item class="title" lines="none">
-      <ion-label>Войдите или зарегистрируйтесь, чтобы продолжить</ion-label>
+      <ion-label class="auth-label">Войдите или зарегистрируйтесь, чтобы продолжить</ion-label>
     </ion-item>
     <ion-item class="item-email ion-no-padding" lines="full">
-      <ion-label position="floating">E-mail</ion-label>
-      <ion-input inputmode="email" type="email"></ion-input>
+      <ion-label class="auth-label" position="floating">E-mail</ion-label>
+      <ion-input class="auth-input" inputmode="email" type="email"></ion-input>
     </ion-item>
     <ion-item class="item-password ion-no-padding" lines="full">
-      <ion-label class="label-password" position="floating">Пароль</ion-label>
-      <ion-input class="input-password" type="password"></ion-input>
+      <ion-label class="auth-label" position="floating">Пароль</ion-label>
+      <ion-input class="auth-input" type="password"></ion-input>
     </ion-item>
     <ion-button routerLink="/wait-reg" class="btn-login" shape="round" expand="block">
       <ion-text>Войти</ion-text>
-      <ion-img class="iconBtn" src="../../assets/icon/arrow.png"></ion-img>
+      <ion-img class="auth-img" src="../../assets/icon/arrow.png"></ion-img>
     </ion-button>
     <ion-button routerLink="/reg" class="btn-reg" expand="block" fill="clear">
       Зарегистрироваться

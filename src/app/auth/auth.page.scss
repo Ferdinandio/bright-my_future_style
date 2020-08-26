@@ -39,7 +39,7 @@
 		--color: #ff7425;
 		font-size: 18px;
 		font-weight: 900;
-		ion-label {
+		.auth-label {
 			margin: 0;
 			padding: 0 30% 0 5px;
 			white-space: pre-wrap;
@@ -51,12 +51,12 @@
 	.item-email {
 		--border-color: #fff;
 		width: 83%;
-		ion-label {
+		.auth-label {
 			--color: #fff;
 			font-family: "ClearSans";
 			font-size: 16px;
 		}
-		ion-input {
+		.auth-input {
 			--color: #fff;
 			font-family: "ClearSans";
 			font-size: 16px;
@@ -66,12 +66,12 @@
 	.item-password {
 		--border-color: #fff;
 		width: 83%;
-		ion-label {
+		.auth-label {
 			--color: #fff;
 			font-family: "ClearSans";
 			font-size: 16px;
 		}
-		ion-input {
+		.auth-input {
 			--color: #fff;
 			font-family: "ClearSans";
 			font-size: 16px;
@@ -89,7 +89,7 @@
 		margin-bottom: 14px;
 		position: relative;
 		margin-top: 15px;
-		ion-img {
+		.auth-img {
 			position: absolute;
 			right: -7px;
 			width: 22px;

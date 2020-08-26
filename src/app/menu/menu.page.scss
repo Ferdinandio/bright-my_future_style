@@ -16,9 +16,9 @@ ion-content::part(background) {
 		height: 165px;
 		width: 244px;
 	}
-	ion-toolbar {
+	.toolbar {
 		--background: rgba(0, 0, 0, 0);
-		ion-select {
+		.select {
 			overflow: hidden;
 			background: #f2eae6;
 			color: #b7a198;
@@ -29,10 +29,10 @@ ion-content::part(background) {
 			font-weight: 600;
 			font-size: 15px;
 		}
-		ion-select::part(icon) {
+		.select::part(icon) {
 			display: none;
 		}
-		ion-button {
+		.button {
 			--color: #222;
 			--background: rgba(0, 0, 0, 0);
 			--background-activated: rgba(0, 0, 0, 0);
@@ -43,12 +43,12 @@ ion-content::part(background) {
 	}
 
 	.user-info {
-		ion-avatar {
+		.avatar {
 			height: 65px;
 			width: 65px;
 			margin: 54px 15px 19vh 19px;
 		}
-		ion-label {
+		.label {
 			font-family: "ClearSans";
 			margin: 0;
 			display: flex;
@@ -78,7 +78,7 @@ ion-content::part(background) {
 	.items {
 		--color: #fff;
 		font-family: 'ClearSans';
-		ion-img {
+		.img {
 			margin: 8px 17px 0 5px;
 		}
 		p {

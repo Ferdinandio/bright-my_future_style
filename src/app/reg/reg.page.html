@@ -1,24 +1,24 @@
 <ion-content mode="ios" class="ion-padding">
   <ion-list class="wrapper">
     <ion-item lines="none" class="header">
-      <ion-title slot="start" class="ion-align-items-end ion-text-left ion-no-padding">
+      <ion-title slot="start" class="title ion-align-items-end ion-text-left ion-no-padding">
         <ion-text class="headerFont">Регистрация пользователя</ion-text>
       </ion-title>
     </ion-item>
 
     <ion-item lines="full" class="items">
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input inputmode="email" type="email"></ion-input>
+      <ion-input class="input" inputmode="email" type="email"></ion-input>
     </ion-item>
 
     <ion-item lines="full" class="items">
       <ion-label position="floating">Пароль</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input class="input" type="password"></ion-input>
     </ion-item>
 
     <ion-item lines="full" class="items">
       <ion-label position="floating">Повторите пароль</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input class="input" type="password"></ion-input>
     </ion-item>
 
     <ion-item class="checkFont item-bg ion-no-padding ion-align-items-center" lines="none">
@@ -40,7 +40,7 @@
 </ion-content>
 
 <ion-footer mode="ios" class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar class="toolbar">
     <ion-button routerLink="/auth" shape="round" expand="block" class="ion-text-capitalize btn-reg">
       Зарегистрироваться
     </ion-button>

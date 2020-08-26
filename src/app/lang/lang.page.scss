@@ -11,7 +11,7 @@
 	.logo {
     position: absolute;
     top: 15%;
-		ion-img {
+		.img {
 			margin: 0 auto;
 			padding-right: 7px;
 		}
@@ -27,7 +27,7 @@
 		width: 187px;
     position: absolute;
     top: 43%;
-		ion-label {
+		.label {
 			text-align: center;
 			white-space: pre-wrap;
 		}
@@ -39,18 +39,18 @@
 		font-size: 17px;
 		width: 100%;
     text-align: center;
-		ion-label {
+		.label {
 			margin-bottom: 8px;
 		}
 	}
 
-	ion-segment {
+	.segment {
 		height: 40px;
 		margin: 0 32px 41px;
 		border-radius: 20px;
 		border-right: 5px solid rgb(195,62,1);
 		--background: rgb(195,62,1);
-		ion-segment-button {
+		.segment-button {
 			--indicator-height: 32px;
 			--indicator-transform: translateY(2px) translateX(2px);
 			--border-radius: 16px;
@@ -62,7 +62,7 @@
 		}
 	}
 
-	ion-button {
+	.button {
 		margin-bottom: 19px;
 	}
 }

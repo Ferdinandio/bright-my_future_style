@@ -1,12 +1,12 @@
-ion-toolbar {
+.wr-toolbar {
 	--background: #fff;
-	ion-button {
+	.wr-button {
 		--color: #222;
 		--background-activated: #fff;
 		--background: #fff;
     height: 58px;
 		width: 60px;
-		ion-img {
+		.wr-img {
 			position: relative;
 			left: -8px;
 		}
@@ -17,7 +17,7 @@ ion-content::part(background) {
 	--background: #fff;
 }
 
-ion-list {
+.wr-list {
 	.title {
 		font-family: "ClearSans";
 		font-weight: 900;
@@ -25,7 +25,7 @@ ion-list {
 		font-size: 20px;
     padding-left: 4px;
 	}
-	ion-img {
+	.wr-img {
     margin-top: 11px;
 	}
 	.user-number {

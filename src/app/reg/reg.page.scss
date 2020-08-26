@@ -7,7 +7,7 @@ ion-content::part(scroll) {
 	letter-spacing: 0.2px;
 }
 
-ion-toolbar {
+.toolbar {
 	--background: #fff;
 	.btn-reg {
 		padding: 0 30px;
@@ -36,7 +36,7 @@ ion-toolbar {
 		--color: #FF7425;
 		--min-height: 66px;
 		margin-bottom: 10px;
-		ion-title {
+		.title {
 			.headerFont {
 				font-size: medium;
 				color: #FF7425;
@@ -51,7 +51,7 @@ ion-toolbar {
 		--min-height: 43px;
 		--border-color: #fff;
 		font-size: medium;
-		ion-input {
+		.input {
 			--background: rgba(0, 0, 0, 0);
 			--color: #fff;
 			--padding-top: 15px;

@@ -2,23 +2,23 @@ ion-content::part(background) {
 	--background: #fff;
 }
 
-ion-header {
+.eu__header {
 	background: #fff;
-}
-.eu__toolbar {
-	--background: rgba(0, 0, 0, 0);
-	.eu__button {
-    --background-activated: rgba(0, 0, 0, 0);
-    --background-hover: rgba(0, 0, 0, 0);
-    --background: rgba(0, 0, 0, 0);
-    height: 40px;
-    width: 50px;
-    margin: -5px 0 0 -9px;
-		.eu__img {
-			position: relative;
-			left: -8px;
-			top: -2px;
-			filter: brightness(0.4);
+	.eu__toolbar {
+		--background: rgba(0, 0, 0, 0);
+		.eu__button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background-hover: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 40px;
+			width: 50px;
+			margin: -5px 0 0 -9px;
+			.eu__img {
+				position: relative;
+				left: -8px;
+				top: -2px;
+				filter: brightness(0.4);
+			}
 		}
 	}
 }
@@ -33,7 +33,7 @@ ion-header {
     margin: 17px 0 0;
 	}
 
-	ion-item {
+	.eu__item {
 		padding-left: 5px;
 		overflow: visible;
 		--border-color: #ccc;
@@ -41,7 +41,7 @@ ion-header {
 			font-family: 'ClearSans';
 			font-size: 12px;
 		}
-		ion-input {
+		.eu__input {
 			font-family: 'ClearSans';
 			font-size: 16px;
 			color: #222;
@@ -56,26 +56,26 @@ ion-header {
 			font-family: 'ClearSans';
 			font-size: 11px;
 		}
-		ion-select {
+		.eu__select {
 			font-family: 'ClearSans';
 			padding: 13px 0 3px;
 			min-width: 120%;
 			font-size: 16px;
 			border-bottom: 1px solid #ccc;
 		}
-		ion-select::part(text) {
+		.eu__select::part(text) {
 			color: #222;
 		}
-		ion-select::part(icon) {
+		.eu__select::part(icon) {
 			display: none;
 		}
-		ion-grid {
+		.eu__grid {
 			padding: 0;
-			ion-row {
+			.eu__row {
 				max-height: 67px;
-				ion-col {
+				.eu__col {
 					padding: 5px 0;
-					ion-icon {
+					.eu__icon {
 						margin: 36px 0 0 1px;
 						color: #ccc;
 					}
@@ -97,7 +97,7 @@ ion-header {
 }
 
 .btns-wrapper {
-	ion-button {
+	.eu__button {
 		--background: #f2eae6;
 		--background-activated: #f2eae6;
 		--background-hover: #f2eae6;
@@ -109,11 +109,11 @@ ion-header {
 			position: relative;
 			top: -7px;
 		}
-		ion-label {
+		.eu__label {
 			min-width: 177px;
 			text-align: left;
 			padding-left: 9px;
-			ion-text {
+			.eu__text {
 				display: block;
 				width: 100%;
 				font-family: 'ClearSans';
@@ -132,19 +132,19 @@ ion-header {
 
 	.load-photo-btn {
 		max-height: 42px;
-		ion-label {
+		.eu__label {
 			min-width: 199px;
 			font-size: 12.4px;
 			padding-bottom: 10px;
 		}
 	}
 
-	ion-item {
-		ion-avatar {
+	.eu__item {
+		.eu__avatar {
 			margin: 7px auto;
 			height: 65px;
 			width: 65px;
-			ion-img {
+			.eu__img {
 				position: relative;
 				top: -52px;
 				left: 51px;
