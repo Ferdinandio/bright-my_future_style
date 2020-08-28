@@ -1,31 +1,24 @@
-.pre-wrap {
-	white-space: pre-wrap;
+* {
+	outline: none;
+	font-family: 'ClearSans';
+}
+
+// font & text
+
+.clearSans {
+	font-family: 'ClearSans';
 }
 
 .smallFont {
 	font-size: small;
 }
 
-* {
-	outline: none;
-	font-family: 'ClearSans';
+.bold {
+	font-weight: bold;
 }
 
-ion-item, ion-list, .list-ios {
-	--background: rgba(0, 0, 0, 0);
-	background: rgba(0, 0, 0, 0);
-}
-
-.my-custom-class .modal-wrapper {
-	width: 90%;
-	height: 30%;
-	position: absolute;
-	border-radius: 6px;
-	top: 15px;
-}
-
-.clearSans {
-	font-family: 'ClearSans';
+.pre-wrap {
+	white-space: pre-wrap;
 }
 
 .fontPageTitle {
@@ -39,4 +32,28 @@ ion-item, ion-list, .list-ios {
 .btn_witeFont {
 	font-size: 16px;
 	color: #fff;
+}
+
+.btn_orangeFont {
+	--color: #a83503;
+	--background: rgba(0, 0, 0, 0);
+	--background-activated: rgba(0, 0, 0, 0);
+	--background-hover: rgba(0, 0, 0, 0);
+}
+
+//modal
+
+.my-custom-class .modal-wrapper {
+	width: 90%;
+	height: 30%;
+	position: absolute;
+	border-radius: 6px;
+	top: 15px;
+}
+
+// background-opacity
+
+ion-item, ion-list, .list-ios {
+	--background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 }

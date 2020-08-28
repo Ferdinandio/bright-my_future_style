@@ -1,0 +1,32 @@
+ion-content::part(background) {
+	background: url(../../assets/prog-bg.png) no-repeat;
+	background-position: top;
+	background-size: 116% 100%;
+	margin-top: -76px;
+	background-color: #fff;
+}
+
+
+.pp-toolbar {
+	--background: rgba(0, 0, 0, 0);
+	.pp-button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background-hover: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 24px;
+    width: 33px;
+    margin: 0 0 11px;
+		.pp-img {
+			filter: invert(1);
+		}
+	}
+	.pp-title {
+		margin-left: 14%;
+		font-size: 16px;
+		color: #faf7f7;
+	}
+}
+
+.pp-p {
+	font-weight: 13px;
+}
