@@ -20,19 +20,16 @@ ion-content::part(background) {
 				filter: brightness(0.4);
 			}
 		}
+		.title {
+			font-size: 16px;
+			color: #c33e01;
+			font-weight: 600;
+		}
 	}
 }
 
 .wrapper {
 	padding-right: 40px;
-	.title {
-		font-family: 'ClearSans';
-    font-size: 20.1px;
-    color: #c33e01;
-    font-weight: 600;
-    margin: 17px 0 0;
-	}
-
 	.eu__item {
 		padding-left: 5px;
 		overflow: visible;
@@ -97,22 +94,21 @@ ion-content::part(background) {
 }
 
 .btns-wrapper {
-	.eu__button {
+	.eu__input {
 		--background: #f2eae6;
-		--background-activated: #f2eae6;
-		--background-hover: #f2eae6;
 		--color: #b7a198;
-		--border-radius: 20px;
+		border-radius: 20px;
     width: 98%;
     margin-top: 12px;
 		.cloud {
 			position: relative;
-			top: -7px;
+			top: -5px;
+			margin-left: 5%;
 		}
 		.eu__label {
-			min-width: 177px;
 			text-align: left;
-			padding-left: 9px;
+			padding-left: 5%;
+			width: calc(93% - 52px);
 			.eu__text {
 				display: block;
 				width: 100%;

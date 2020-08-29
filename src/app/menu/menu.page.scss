@@ -80,6 +80,7 @@ ion-content::part(background) {
 		font-family: 'ClearSans';
 		.img {
 			margin: 8px 17px 0 5px;
+			width: 26px;
 		}
 		p {
 			font-size: 16px;
@@ -91,5 +92,9 @@ ion-content::part(background) {
 			border-radius: 2px;
 			color: #fdb88a;
 		}
+	}
+
+	.margin-top-further {
+		margin-top: -4px;
 	}
 }

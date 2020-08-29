@@ -1,31 +1,33 @@
 ion-content::part(background) {
-	background: url(../../assets/concept-bg.png) no-repeat;
 	background-color: #faf7f7;
-	background-position: top;
-	background-size: 123% 100px;
 }
 
-
-.test__toolbar {
-	--background: rgba(0, 0, 0, 0);
-	margin-bottom: 58px;
-	.test__button {
-    --background-activated: rgba(0, 0, 0, 0);
-    --background: rgba(0, 0, 0, 0);
-    height: 40px;
-    width: 50px;
-    margin: -5px 0 0 -9px;
-		.test__img {
-			position: relative;
-			left: -8px;
-			top: -2px;
-			filter: opacity(0.5);
+.test__header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-position: top;
+	background-size: 123% 100px;
+	background-color: #faf7f7;
+	.test__toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.test__button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 40px;
+			width: 50px;
+			margin: -5px 0 0 -9px;
+			.test__img {
+				position: relative;
+				left: -8px;
+				top: -2px;
+				filter: opacity(0.5);
+			}
 		}
-	}
-	.test__label {
-		font-size: 16px;
-		color: #fff;
-    margin-left: 20%;
+		.test__label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 15%;
+		}
 	}
 }
 

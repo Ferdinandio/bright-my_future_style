@@ -31,6 +31,7 @@ ion-content::part(background) {
 }
 
 .notifications__item {
+	--detail-icon-font-size: 0;
 	overflow: visible;
 }
 

@@ -11,20 +11,19 @@ ion-content::part(background) {
 			--color: #222;
 			--background-activated: #faf7f7;
 			--background: #faf7f7;
-			height: 69px;
-			width: 60px;
-			margin-bottom: -13px;
 			.cp__img {
-				position: relative;
-				left: -8px;
 				filter: brightness(0.4);
 			}
 		}
-	}
-	.title {
-		background: #faf7f7;
-		padding-left: 20px;
-		letter-spacing: 0.62px;
+		.title {
+			background: #faf7f7;
+			color: #c33e01;
+			letter-spacing: 0.4px;
+			font-weight: 600;
+			margin-left: 15%;
+			position: relative;
+			top: 4px;
+		}
 	}
 }
 
@@ -38,23 +37,20 @@ ion-content::part(background) {
 		height: 100px;
 	}
 	.cp__card_badge {
-    white-space: pre-wrap;
-    width: 100%;
-    background: #fff;
-    color: transparent;
-    border-radius: 0;
-    font-size: 9px;
-    line-height: 13px;
-    letter-spacing: 0.6px;
-    text-align: left;
-    margin: -10px 0 8px;
+		position: absolute;
+		top: -1px;
+		right: 20px;
+		white-space: pre-wrap;
+		width: 60px;
+		background: #fff;
+		color: transparent;
+		border-radius: 0;
+		font-size: 9px;
+		line-height: 13px;
+		letter-spacing: 0.6px;
 		.cp__card_badgeImg {
-			height: 15px;
-			width: 15px;
-			display: inline-block;
-			position: relative;
-			top: 3px;
-			margin: 0 5px 0 25px;
+			height: 24px;
+			padding: 9px 0 3px;
 		}
 		.cp__card_badge-blue {
 			color: #3880ff;
