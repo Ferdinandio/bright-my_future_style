@@ -69,19 +69,21 @@
   </ion-list>
 
   <ion-list class="btns-wrapper ion-padding-horizontal ion-margin-horizontal">
-    <ion-input id="doc" class="eu__input load-doc-btn" readonly>
+    <ion-input class="eu__input load-doc-btn" readonly>
       <ion-img src="../../assets/icon/doc.svg" class="cloud"></ion-img>
       <ion-label class="eu__label">
         <ion-text class="eu__text">document.png</ion-text>
         <ion-text class="eu__text size-doc">1756 Кб</ion-text>
+        <ion-input class="docLoad ion-padding" type="file"></ion-input>
       </ion-label>
       <ion-img src="../../assets/icon/edit-doc.svg"></ion-img>
     </ion-input>
 
-    <ion-input id="ava" class="eu__input load-photo-btn" readonly>
+    <ion-input class="eu__input load-photo-btn" readonly>
       <ion-img src="../../assets/icon/doc.svg" class="cloud" slot="start"></ion-img>
       <ion-label class="eu__label">
         Загрузить документ
+        <ion-input class="avaLoad ion-padding" type="file" accept="image/*"></ion-input>
       </ion-label>
     </ion-input>
 

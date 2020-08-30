@@ -99,7 +99,8 @@ ion-content::part(background) {
 		--color: #b7a198;
 		border-radius: 20px;
     width: 98%;
-    margin-top: 12px;
+		margin-top: 12px;
+		cursor: default;
 		.cloud {
 			position: relative;
 			top: -5px;
@@ -161,4 +162,24 @@ ion-content::part(background) {
     margin: 16px 0 20px;
     font-family: 'ClearSans';
 	}
+}
+
+.docLoad {
+	font-size: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+}
+
+.avaLoad {
+	font-size: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
 }
