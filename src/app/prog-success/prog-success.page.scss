@@ -24,6 +24,10 @@ ion-content::part(background) {
 	}
 }
 
+.ps-input {
+	--placeholder-color: #222;
+}
+
 .ps-btn {
 	--background: #c33e01;
 	--background-activated: #aa3f0e;
