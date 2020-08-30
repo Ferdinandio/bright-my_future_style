@@ -1,16 +1,15 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="ion-padding ion-no-border">
+  <ion-toolbar class="mc-toolbar">
+    <ion-button routerLink="#" class="mc-button ion-no-padding">
+      <!-- <ion-img src="../../assets/icon/arrow-white-back.png"></ion-img> -->
+    </ion-button>
+    <ion-label class="mc-title">
       Просмотр сертификата
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content mode="ios" class="ion-padding-horizontal">
   <ion-img src="../../assets/certificate.png"></ion-img>
-  <ion-button expand="block" class="ion-padding">Скачать</ion-button>
+  <ion-button class="mc-btn ion-margin" expand="block" shape="round">Скачать</ion-button>
 </ion-content>
