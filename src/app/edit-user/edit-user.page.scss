@@ -35,26 +35,21 @@ ion-content::part(background) {
 		overflow: visible;
 		--border-color: #ccc;
 		.input-label {
-			font-family: 'ClearSans';
 			font-size: 12px;
 		}
 		.eu__input {
-			font-family: 'ClearSans';
 			font-size: 16px;
 			color: #222;
 		}
 		.city {
-			font-family: 'ClearSans';
 			font-size: 16px;
 			padding: 8px 0;
 			color: #222;
 		}
 		.grid-label {
-			font-family: 'ClearSans';
 			font-size: 11px;
 		}
 		.eu__select {
-			font-family: 'ClearSans';
 			padding: 13px 0 3px;
 			min-width: 120%;
 			font-size: 16px;
@@ -77,7 +72,6 @@ ion-content::part(background) {
 						color: #ccc;
 					}
 					.age {
-						font-family: 'ClearSans';
 						max-height: 27px;
 						margin-top: 15px;
 						font-size: 16px;
@@ -113,7 +107,6 @@ ion-content::part(background) {
 			.eu__text {
 				display: block;
 				width: 100%;
-				font-family: 'ClearSans';
 				font-size: 12.4px;
 				line-height: 17px;
 			}
@@ -160,7 +153,6 @@ ion-content::part(background) {
 		--color: #fff;
     --box-shadow: 0px 10px 25px #c32d5d40;
     margin: 16px 0 20px;
-    font-family: 'ClearSans';
 	}
 }
 

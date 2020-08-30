@@ -1,39 +1,36 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="ion-padding ion-no-border">
+  <ion-toolbar class="po-toolbar">
+    <ion-button routerLink="/menu/prog-passports" class="po-button ion-no-padding">
+      <ion-img src="../../assets/icon/arrow-white-back.png"></ion-img>
+    </ion-button>
+    <ion-label class="po-title">
       Просмотр программы
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item>
+<ion-content mode="ios">
+  <ion-list class="ion-padding-horizontal">
+    <ion-item class="ion-no-padding" lines="full">
       <ion-label>
-        Бесплатное поле
+        <ion-text class="pre-wrap">Бесплатное поле</ion-text>
       </ion-label>
     </ion-item>
-    <ion-item>
+    <ion-item class="pre-wrap ion-no-padding" lines="full">
       <ion-label>
-        Бесплатное поле
+        <ion-text class="pre-wrap">Бесплатное поле</ion-text>
       </ion-label>
     </ion-item>
-    <ion-item>
+    <ion-item class="ion-no-padding" lines="full">
       <ion-label>
-        Бесплатное поле
+        <ion-text class="pre-wrap">Бесплатное полеБесплатное полеБесплатное полеБесплатное поле</ion-text>
       </ion-label>
     </ion-item>
     <ion-card>
       <ion-label>
-        <div class="pre-wrap ion-padding">
-          Для получения доступа к платным полям, получите доступ
-        </div>
+        <div class="pre-wrap ion-padding">Для получения доступа к платным полям, получите доступ</div>
       </ion-label>
-      <ion-button routerLink="prog-success" shape="round" class="ion-margin" expand="block">
+      <ion-button routerLink="prog-success" class="po-btn ion-margin" shape="round" expand="block">
         Получить
       </ion-button>
     </ion-card>
