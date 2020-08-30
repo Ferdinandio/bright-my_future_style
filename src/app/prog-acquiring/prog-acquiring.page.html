@@ -1,15 +1,14 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="title">
+<ion-header mode="ios" class="ion-padding ion-no-border">
+  <ion-toolbar class="pa-toolbar">
+    <ion-button routerLink="/menu/prog-passports/prog-overview/prog-success" class="pa-button ion-no-padding">
+      <ion-img src="../../assets/icon/arrow-white-back.png"></ion-img>
+    </ion-button>
+    <ion-label class="pa-title">
       Оплата
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-img routerLink="/menu/prog-passports/prog-overview" src="../../assets/screen-acquiring.png"></ion-img>
+<ion-content mode="ios" class="ion-padding-horizontal">
+  <ion-img routerLink="/menu/prog-passports" src="../../assets/screen-acquiring.png"></ion-img>
 </ion-content>

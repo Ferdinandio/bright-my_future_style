@@ -1,0 +1,25 @@
+ion-content::part(background) {
+	background: url(../../assets/prog-bg.png) no-repeat;
+	background-position: top;
+	background-size: 116% 600px;
+	margin-top: -76px;
+	background-color: #fff;
+}
+
+
+.pa-toolbar {
+	--background: rgba(0, 0, 0, 0);
+	.pa-button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background-hover: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 28px;
+    width: 28px;
+    margin: 0 0 9px;
+	}
+	.pa-title {
+		margin-left: 28%;
+		font-size: 16px;
+		color: #faf7f7;
+	}
+}

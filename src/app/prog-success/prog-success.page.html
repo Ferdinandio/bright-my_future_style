@@ -1,34 +1,34 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="title">
-      Получение доступа к методике Берга
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+<ion-header mode="ios" class="ion-padding ion-no-border">
+  <ion-toolbar class="ps-toolbar">
+    <ion-button routerLink="/menu/prog-passports/prog-overview" class="ps-button ion-no-padding">
+      <ion-img src="../../assets/icon/arrow-white-back.png"></ion-img>
+    </ion-button>
+    <ion-label class="ps-title">
+      Получение доступа к методике
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item>
+<ion-content mode="ios">
+  <ion-list class="ion-padding">
+    <ion-item class="ion-no-padding" lines="full">
       <ion-label>
-        <div class="pre-wrap ion-text-center">
-          Для получения доступа необходимо ввести промо-код или оплатить доступ
-        </div>
+        <ion-text class="pre-wrap ion-text-center">Для получения доступа необходимо ввести промо-код или оплатить доступ</ion-text>
       </ion-label>
     </ion-item>
-    <ion-item>
+
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Введите промо-код"></ion-input>
-      <ion-button routerLink="/menu/prog-passports/prog-overview" fill="clear">Применить</ion-button>
+      <ion-button routerLink="/menu/prog-passports/prog-overview" class="btn_orangeFont" fill="clear">Применить</ion-button>
     </ion-item>
-    <ion-item>
+
+    <ion-item class="ion-no-padding" lines="full">
       <ion-label>
         Цена - 1000 рублей
       </ion-label>
     </ion-item>
-    <ion-button routerLink="/prog-acquiring" class="ion-margin" shape="round"expand="block">
+
+    <ion-button routerLink="/prog-acquiring" class="ps-btn ion-margin" shape="round"expand="block">
       Купить
     </ion-button>
   </ion-list>
