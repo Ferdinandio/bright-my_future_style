@@ -134,6 +134,7 @@ ion-content::part(background) {
 			margin: 7px auto;
 			height: 65px;
 			width: 65px;
+			position: relative;
 			.eu__img {
 				position: relative;
 				top: -52px;
@@ -157,7 +158,7 @@ ion-content::part(background) {
 }
 
 .docLoad {
-	font-size: 0;
+	font-size: 5px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -167,10 +168,10 @@ ion-content::part(background) {
 }
 
 .avaLoad {
-	font-size: 0;
+	font-size: 8px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 5px;
 	right: 0;
 	bottom: 0;
 	opacity: 0;
