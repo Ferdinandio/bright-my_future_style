@@ -1,36 +1,113 @@
-.insertMsg {
-	margin: 5px 0 5px 5px;
-	background: #eee;
-	border-radius: 25px;
-	padding-left: 8px;
+ion-content::part(background) {
+	background: #faf7f7;
 }
 
-.flexWrapper {
+.comChatting-header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #faf7f7;
+	background-position: top;
+	background-size: 123% 100px;
+	.comChatting-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.comChatting-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			.comChatting-img {
+				filter: opacity(0.5);
+			}
+		}
+		.comChatting-label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 20%;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+.comChatting-footer {
+	box-shadow: 0 5px 14px #222;
+}
+
+.comChatting-textarea {
+	margin-left: 12px;
+	background: #faf7f7;
+	border-radius: 25px;
+	padding-left: 8px;
+	font-size: 14px;
+	height: 40px;
+}
+
+.comChatting-btn {
+	width: 60px;
+	height: 44px;
+	margin-left: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	.comChatting-icon {
+    width: 100%;
+    height: 100%;
+    color: #12A958;
+	}
+}
+
+
+
+.comChatting-avatar {
+	width: 35px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.comChatting-avatar-left {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.comChatting-flexWrapper {
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-end;
+	padding-bottom: 23px;
 }
 
-.date {
+.comChatting-date {
+	font-size: 16px;
 	text-align: center;
+	color: #b7a198;
 }
 
-.message {
-	background-color: #add;
+.comChatting-message {
+	background-color: #f2eae6;
 	padding: 10px;
 	border-radius: 20px;
+	width: fit-content;
+	.comChatting-time {
+		font-size: 10px;
+		color: #b7a198;
+	}
 }
 
-.gridMessages {
+.comChatting-message-right {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.comChatting-message-left {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.comChatting-gridMessages {
 	min-width: 100%;
 	margin-top: auto;
 	margin-bottom: 0;
-}
-
-.avatar {
-	width: 40px;
-	height: 40px;
-	margin: 0;
-	padding: 0;
+	color: #775e51;
+	font-size: 14px;
 }

@@ -1,23 +1,80 @@
-.chevron {
-	width: 70px;
-	height: 30px;
+ion-content::part(background) {
+	background: #faf7f7;
 }
 
-.tabelBackgroundPlusMarginBottom {
+.ach-header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #faf7f7;
+	background-position: top;
+	background-size: 123% 100px;
+	.ach-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.ach-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			.ach-img {
+				filter: invert(1);
+			}
+		}
+		.ach-label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 20%;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+.ach-title {
+	font-size: 14px;
+	text-transform: none;
+}
+
+.ach-subtitle {
+	display: block;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.ach-chevron {
+	width: 50px;
+	height: 30px;
+	color: #999;
+	margin-top: auto;
+	margin-bottom: 26px;
+}
+
+.ach-item {
+	padding-left: 16px;
+	height: 32px;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.ach-margin {
+	margin-bottom: 10px;
+}
+
+.tableBg {
 	background: #eee;
+	border-radius: 3px;
+}
+
+.tableBg-margin {
 	margin-bottom: 5px;
 }
 
-.dotSize {
+.dot {
 	width: 7px;
-}
-
-.gridFontSize {
-	font-size: 0.85em;
-}
-
-.relearn {
-	font-size: 0.9em;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
 }
 
 .tabel-cols {
@@ -25,7 +82,36 @@
 	white-space: pre-line;
 }
 
-.badgeColor {
+.badgeBg {
 	background: #fff;
-	color: #222;
+}
+
+
+
+.textColor-1 {
+	color: #29170E;
+}
+
+.textColor-2 {
+	color: #8E5740;
+}
+
+.textColor-3 {
+	color: #6F6158;
+}
+
+.textColor-4 {
+	color: #B3A298;
+}
+
+.textSize11 {
+	font-size: 11px;
+}
+
+.block {
+	display: block;
+}
+
+.iconColor {
+	color: #53A462;
 }

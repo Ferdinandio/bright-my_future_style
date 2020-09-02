@@ -1,120 +1,83 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar routerLink="another-achievement">
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="ach-header ion-no-border ion-padding">
+  <ion-toolbar routerLink="another-achievement" class="ach-toolbar">
+    <ion-button routerLink="/menu" class="ach-button ion-no-padding ion-no-margin">
+      <ion-img src="../../assets/icon/menu.svg" class="ach-img"></ion-img>
+    </ion-button>
+    <ion-label class="ach-label">
       Мои достижения
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-button routerLink="/menu">
-        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content mode="ios">
   <ion-card>
-    <ion-item>
-      <ion-card-header>
+    <ion-item class="ion-no-padding">
+      <ion-card-header class="ion-no-padding ion-padding-vertical ion-padding-start">
         <ion-card-subtitle>
-          Вводный курс для муниципальных координаторов программ наставничества молодёжи в ТСЖ
+          <ion-text class="ach-title textColor-1">Вводный курс для муниципальных координаторов программ наставничества молодёжи в ТСЖ</ion-text>
         </ion-card-subtitle>
-        <ion-text class="smallFont">
-          Средний балл 0
-        </ion-text>
+        <ion-text class="ach-subtitle textColor-2">Средний балл 0</ion-text>
       </ion-card-header>
-      <ion-icon class="chevron" size="large" name="chevron-up-outline"></ion-icon>
+      <ion-icon class="ach-chevron" size="large" name="chevron-up-outline"></ion-icon>
     </ion-item>
-    <ion-grid class="gridFontSize">
+    <ion-grid>
       <ion-row>
         <ion-col class="tabel-cols">
-          <ion-text>
-            <b>Этап</b>
-          </ion-text>
+          <ion-text class="textColor-1 textSize11 bold">Этап</ion-text>
         </ion-col>
         <ion-col class="tabel-cols">
-          <ion-text>
-            <b>Ознакомление</b>
-          </ion-text>
+          <ion-text class="textColor-1 textSize11 bold">Ознакомление</ion-text>
         </ion-col>
         <ion-col class="tabel-cols">
-          <ion-text>
-            <b>Тест</b>
-          </ion-text>
+          <ion-text class="textColor-1 textSize11 bold">Тест</ion-text>
         </ion-col>
       </ion-row>
-      <ion-row class="tabelBackgroundPlusMarginBottom">
+      <ion-row class="tableBg tableBg-margin">
         <ion-col class="tabel-cols">
-          <ion-text>
-            О программе
-          </ion-text>
+          <ion-text class="textColor-3 textSize11 bold">О программе</ion-text>
         </ion-col>
         <ion-col class="tabel-cols">
-          <ion-label>
-            <ion-icon class="dotSize" color="success" name="ellipse-sharp"></ion-icon>
-            <ion-text color="medium">
-              Изучено
-            </ion-text>
-          </ion-label>
-          <ion-text class="relearn">
-            Изучить заново
-          </ion-text>
+          <ion-icon class="dot iconColor" color="success" name="ellipse-sharp"></ion-icon>
+          <ion-text class="textColor-4 textSize11">Изучено</ion-text>
+          <ion-text class="textColor-2 textSize11 block bold">Изучить заново</ion-text>
         </ion-col>
         <ion-col class="tabel-cols"></ion-col>
       </ion-row>
-      <ion-row class="tabelBackgroundPlusMarginBottom">
-        <ion-col class="tabel-cols">
-          <ion-text>
-            Концепция наставничества
-          </ion-text>
+      <ion-row class="tableBg">
+        <ion-col class="tabel-cols ion-padding-end">
+          <ion-text class="textColor-3 textSize11 bold">Концепция наставничества</ion-text>
         </ion-col>
         <ion-col class="tabel-cols">
-          <ion-label>
-            <ion-icon class="dotSize" color="success" name="ellipse-sharp"></ion-icon>
-            <ion-text color="medium">
-              Изучено
-            </ion-text>
-          </ion-label>
-          <ion-text class="relearn">
-            Изучить заново
-          </ion-text>
+          <ion-icon class="dot iconColor" color="success" name="ellipse-sharp"></ion-icon>
+          <ion-text class="textColor-4 textSize11">Изучено</ion-text>
+          <ion-text class="textColor-2 textSize11 block bold">Изучить заново</ion-text>
         </ion-col>
         <ion-col class="tabel-cols">
-          <ion-label>
-            <ion-icon class="dotSize" color="medium" name="ellipse-sharp"></ion-icon>
-            <ion-text color="medium">
-              Проверка
-            </ion-text>
-          </ion-label>
+          <ion-icon class="dot textColor-4" name="ellipse-sharp"></ion-icon>
+          <ion-text class="textColor-4 textSize11">Проверка</ion-text>
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-item lines="none">
-      <ion-icon size="small" slot="start" name="stats-chart"></ion-icon>
+    <ion-item class="ach-item ion-no-padding" lines="none">
+      <ion-icon class="icon iconColor" size="small" slot="start" name="stats-chart"></ion-icon>
       <ion-label>
-        <ion-text class="smallFont" color="medium">
-          Процент ознакомления
-        </ion-text>
+        <ion-text class="textSize11 textColor-4 bold">Процент ознакомления</ion-text>
       </ion-label>
-      <ion-badge class="badgeColor" fill="clear" slot="end">100</ion-badge>
+      <ion-badge class="textColor-1 badgeBg" fill="clear" slot="end">100</ion-badge>
     </ion-item>
-    <ion-item lines="none">
-      <ion-icon size="small" slot="start" name="layers"></ion-icon>
+    <ion-item class="ach-item ion-no-padding" lines="none">
+      <ion-icon class="icon iconColor" size="small" slot="start" name="layers"></ion-icon>
       <ion-label>
-        <ion-text class="smallFont" color="medium">
-          Пройдено тестов, %
-        </ion-text>
+        <ion-text class="textSize11 textColor-4 bold">Пройдено тестов, %</ion-text>
       </ion-label>
-      <ion-badge class="badgeColor" fill="clear" slot="end">0</ion-badge>
+      <ion-badge class="textColor-1 badgeBg" fill="clear" slot="end">0</ion-badge>
     </ion-item>
-    <ion-item lines="none">
-      <ion-icon size="small" slot="start" name="bar-chart"></ion-icon>
+    <ion-item class="ach-item ach-margin ion-no-padding" lines="none">
+      <ion-icon class="icon iconColor" size="small" slot="start" name="bar-chart"></ion-icon>
       <ion-label>
-        <ion-text class="smallFont pre-wrap" color="medium">
-          Среднее число попыток сдачи
-        </ion-text>
+        <ion-text class="textSize11 textColor-4 bold">Среднее число попыток сдачи</ion-text>
       </ion-label>
-      <ion-badge class="badgeColor" fill="clear" slot="end">3</ion-badge>
+      <ion-badge class="textColor-1 badgeBg" fill="clear" slot="end">3</ion-badge>
     </ion-item>
   </ion-card>
 </ion-content>

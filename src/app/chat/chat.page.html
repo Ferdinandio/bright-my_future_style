@@ -1,46 +1,130 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="chat-header ion-no-border ion-padding">
+  <ion-toolbar class="chat-toolbar">
+    <ion-button routerLink="/menu" class="chat-button ion-no-padding ion-no-margin">
+      <ion-img src="../../assets/icon/menu.svg" class="chat-img"></ion-img>
+    </ion-button>
+    <ion-label class="chat-label">
       Чат
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-button routerLink="/menu">
-        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button (click)="presentModal()">
+  <ion-fab-button (click)="presentModal()" class="chat-fab" size="small">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
 
-<ion-content>
-  <ion-item routerLink="chatting">
-    <ion-avatar>
+<ion-content mode="ios" class="ion-padding">
+  <ion-item routerLink="chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
       <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
     </ion-avatar>
-    <ion-label class="ion-padding-horizontal pre-wrap">
-      <div>Техподдержка 1</div>
-      <div class="xsFont" color="medium">Сервис</div>
-      <p color="medium">Вы: Добрый день</p>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Техподдержка 1</div>
+      <div class="chat-labelMiddle">Сервис</div>
+      <div class="chat-labelBottom dark">Вы: Добрый день</div>
     </ion-label>
     <ion-badge class="badge">
       <div>17.06.2020</div>
       <div>16:45:05</div>
     </ion-badge>
   </ion-item>
-  <ion-item routerLink="common-chatting">
-    <ion-avatar>
+  <ion-item routerLink="common-chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
       <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
     </ion-avatar>
-    <ion-label class="ion-padding-horizontal pre-wrap">
-      <div>Ментор тестовый</div>
-      <div class="xsFont" color="medium">Наставник</div>
-      <p>Тест</p>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Ментор тестовый</div>
+      <div class="chat-labelMiddle">Наставник</div>
+      <div class="chat-labelBottom dark">Тест</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:41:02</div>
+      <ion-icon class="dot" color="danger" name="ellipse-sharp"></ion-icon>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Техподдержка 1</div>
+      <div class="chat-labelMiddle">Сервис</div>
+      <div class="chat-labelBottom dark">Вы: Добрый день</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:45:05</div>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="common-chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Ментор тестовый</div>
+      <div class="chat-labelMiddle">Наставник</div>
+      <div class="chat-labelBottom dark">Тест</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:41:02</div>
+      <ion-icon class="dot" color="danger" name="ellipse-sharp"></ion-icon>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Техподдержка 1</div>
+      <div class="chat-labelMiddle">Сервис</div>
+      <div class="chat-labelBottom dark">Вы: Добрый день</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:45:05</div>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="common-chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Ментор тестовый</div>
+      <div class="chat-labelMiddle">Наставник</div>
+      <div class="chat-labelBottom dark">Тест</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:41:02</div>
+      <ion-icon class="dot" color="danger" name="ellipse-sharp"></ion-icon>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Техподдержка 1</div>
+      <div class="chat-labelMiddle">Сервис</div>
+      <div class="chat-labelBottom dark">Вы: Добрый день</div>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16:45:05</div>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="common-chatting" class="ion-no-padding" lines="full" detail="false">
+    <ion-avatar class="chat-avatar">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal">
+      <div class="chat-labelTop dark">Ментор тестовый</div>
+      <div class="chat-labelMiddle">Наставник</div>
+      <div class="chat-labelBottom dark">Тест</div>
     </ion-label>
     <ion-badge class="badge">
       <div>17.06.2020</div>

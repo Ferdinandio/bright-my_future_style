@@ -1,50 +1,49 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="comChatting-header ion-no-border ion-padding">
+  <ion-toolbar class="comChatting-toolbar">
+    <ion-button routerLink="/menu/chat" class="comChatting-button ion-no-padding ion-no-margin">
+      <ion-img src="../../assets/icon/arrow-white-back.png" class="comChatting-img"></ion-img>
+    </ion-button>
+    <ion-label class="comChatting-label">
       Ментор тестовый
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="flexWrapper">
-    <ion-grid class="gridMessages">
+<ion-content mode="ios">
+  <div class="comChatting-flexWrapper">
+    <ion-grid class="comChatting-gridMessages">
       <ion-row>
         <ion-col>
           <ion-text>
-            <div class="date">17.06.2020</div>
+            <div class="comChatting-date">17.06.2020</div>
           </ion-text>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col offset="6" size="4">
-          <div class="message">
-            <div>Привет</div>
-            <div class="smallFont">16:54:10</div>
+          <div class="comChatting-message comChatting-message-right">
+            <div>привет</div>
+            <div class="comChatting-time">16:54:10</div>
           </div>
         </ion-col>
         <ion-col size="2">
-          <ion-avatar class="avatar">
+          <ion-avatar class="comChatting-avatar">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
           </ion-avatar>
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-grid class="gridMessages">
+    <ion-grid class="comChatting-gridMessages">
       <ion-row>
         <ion-col size="2">
-          <ion-avatar class="avatar">
+          <ion-avatar class="comChatting-avatar comChatting-avatar-left">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
           </ion-avatar>
         </ion-col>
         <ion-col size="4">
-          <div class="message">
-            <div>Тест</div>
-            <div class="smallFont">16:54:20</div>
+          <div class="comChatting-message comChatting-message-left">
+            <div>тест</div>
+            <div class="comChatting-time">16:54:20</div>
           </div>
         </ion-col>
       </ion-row>
@@ -52,13 +51,11 @@
   </div>
 </ion-content>
 
-<ion-footer>
+<ion-footer mode="ios" class="comChatting-footer ion-no-border">
   <ion-toolbar>
-    <ion-textarea class="insertMsg" rows="1" placeholder="Сообщение..."></ion-textarea>
-    <ion-buttons slot="end">
-      <ion-button fill="clear">
-        <ion-icon size="large" name="arrow-redo-circle"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    <ion-textarea class="comChatting-textarea" rows="1" placeholder="Сообщение..."></ion-textarea>
+    <ion-button class="comChatting-btn ion-no-padding ion-no-margin" slot="end" fill="clear">
+      <ion-icon class="comChatting-icon" name="arrow-redo-circle"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-footer>

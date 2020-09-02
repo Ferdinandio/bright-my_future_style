@@ -1,19 +1,70 @@
+.chat-header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #fff;
+	background-position: top;
+	background-size: 123% 100px;
+	.chat-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.chat-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			.chat-img {
+				filter: invert(1);
+			}
+		}
+		.chat-label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 35%;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+.chat-avatar {
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+.chat-labelTop {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.chat-labelMiddle {
+	font-size: 11px;
+	color: rgba(183,161,152);
+}
+
+.chat-labelBottom {
+	font-size: 14px;
+}
+
 .badge {
 	padding: 0;
 	border-radius: 0;
-	color: #92949c;
+	color: #b7a198;
 	background-color: white;
-	font-size: x-small;
-	margin: 10px 0 auto;
+	font-size: 11px;
+	margin: auto 0;
 	text-align: right;
+	font-weight: 400;
 }
 
 .dot {
 	height: 7px;
 	float: right;
+	margin-top: 3px;
 }
 
-.xsFont {
-	font-size: x-small;
-	color: lightgray;
+.chat-fab {
+	--background: #c33e01;
+	--background-activated: #c33e01;
+	--background-hover: #c33e01;
+	--color: #fff;
 }

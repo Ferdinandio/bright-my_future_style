@@ -1,31 +1,170 @@
-.chevron {
-	width: 70px;
-	height: 30px;
+ion-content::part(background) {
+	background: #faf7f7;
 }
 
-.tabelBackgroundPlusMarginBottom {
+.another-ach-header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #faf7f7;
+	background-position: top;
+	background-size: 123% 100px;
+	.another-ach-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.another-ach-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			.another-ach-img {
+				filter: invert(1);
+			}
+		}
+		.another-ach-label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 20%;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+.another-ach-avatar {
+	width: 60px;
+	height: 60px;
+}
+
+ion-select {
+	width: 100%;
+	justify-content: center;
+	background: #fff;
+	padding: 0 93px 0 80px;
+	border-radius: 10px;
+	margin-left: calc(100% - 240px);
+}
+
+ion-select::part(placeholder),
+ion-select::part(text) {
+	flex: 0 0 auto;
+	font-size: 14px;
+	font-weight: 600;
+	color: #222;
+	padding-bottom: 2px;
+}
+
+ion-select::part(icon) {
+	color: #222;
+	opacity: 1;
+	position: relative;
+	top: 2px;
+}
+
+ion-select::part(icon)::before {
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-top: 6px solid #fff;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	z-index: 1;
+}
+
+.ripple {
+	--ripple-color: rgba(0, 0, 0, 0);
+	--background-activated-opacity: 0;
+	--background-hover-opacity: 0;
+}
+
+.another-ach-card-header {
+	width: 200%;
+}
+
+.another-ach-title {
+	font-size: 14px;
+	text-transform: none;
+}
+
+.another-ach-subtitle {
+	display: block;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.another-ach-chevron {
+	width: 50px;
+	height: 30px;
+	color: #999;
+	margin-top: auto;
+	margin-bottom: 26px;
+}
+
+.another-ach-item {
+	padding-left: 16px;
+	height: 32px;
+}
+
+.icon {
+	margin-right: 10px;
+}
+
+.another-ach-margin {
+	margin-bottom: 10px;
+}
+
+.tableBg {
 	background: #eee;
+	border-radius: 3px;
+}
+
+.tableBg-margin {
 	margin-bottom: 5px;
 }
 
-.dotSize {
+.dot {
 	width: 7px;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
 }
 
-.gridFontSize {
-	font-size: 0.85em;
-}
-
-.relearn {
-	font-size: 0.9em;
-}
-
-.col {
+.tabel-cols {
 	max-width: 33.5%;
 	white-space: pre-line;
 }
 
-.badgeColor {
+.badgeBg {
 	background: #fff;
-	color: #222;
+}
+
+
+
+.textColor-1 {
+	color: #29170E;
+}
+
+.textColor-2 {
+	color: #8E5740;
+}
+
+.textColor-3 {
+	color: #6F6158;
+}
+
+.textColor-4 {
+	color: #B3A298;
+}
+
+.textSize11 {
+	font-size: 11px;
+}
+
+.block {
+	display: block;
+}
+
+.iconColor {
+	color: #53A462;
 }
