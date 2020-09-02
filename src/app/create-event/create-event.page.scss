@@ -18,7 +18,10 @@ ion-content::part(background) {
 		--color: #fff;
     height: 28px;
     width: 28px;
-    margin: 0 0 9px;
+		margin: 0 0 9px;
+		.ce-img {
+			color: #fff;
+		}
 	}
 	.ce-title {
     margin: 0 46% 0 auto;
