@@ -257,11 +257,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-    loadChildren: () => import('./mentor-participation/mentor-participation.module').then( m => m.MentorParticipationPageModule)
+        loadChildren: () => import('./mentor-participation/mentor-participation.module').then( m => m.MentorParticipationPageModule)
       },
       {
-        path: 'mentor-certificate',
-        loadChildren: () => import('./mentor-certificate/mentor-certificate.module').then( m => m.MentorCertificatePageModule)
+        path: 'prog-overview',
+        loadChildren: () => import('./prog-overview/prog-overview.module').then( m => m.ProgOverviewPageModule)
       }
     ]
   },
