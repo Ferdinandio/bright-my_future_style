@@ -9,22 +9,29 @@ ion-content::part(background) {
 
 .ce-toolbar {
 	--background: rgba(0, 0, 0, 0);
+	position: relative;
+	top: -8px;
 	.ce-button {
     --background-activated: rgba(0, 0, 0, 0);
     --background-hover: rgba(0, 0, 0, 0);
-    --background: rgba(0, 0, 0, 0);
+		--background: rgba(0, 0, 0, 0);
+		--color: #fff;
     height: 28px;
     width: 28px;
     margin: 0 0 9px;
 	}
 	.ce-title {
-    margin: 0 23% 0 auto;
+    margin: 0 46% 0 auto;
     font-size: 16px;
     color: #faf7f7;
     float: right;
     position: relative;
-    top: -4px;
+    top: -5px;
 	}
+}
+
+.ce-item {
+	color: #222;
 }
 
 .ce-toggle {

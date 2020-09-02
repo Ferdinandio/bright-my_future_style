@@ -37,6 +37,7 @@ ion-content::part(background) {
 .calendar-titleYear {
 	font-size: 17px;
 	display: block;
+	color: #222;
 }
 
 .calendar-addBtn {
@@ -45,11 +46,6 @@ ion-content::part(background) {
 	width: 30px;
 	height: 30px;
 	margin-top: 11px;
-}
-
-.monthCell {
-	color: #B3481E;
-	padding: 10% 0 5% 5%;
 }
 
 .grid {
@@ -62,6 +58,7 @@ ion-content::part(background) {
 	align-items: center;
 	justify-content: center;
 	font-weight: 600;
+	color: #222;
 }
 .headCells {
 	position: fixed;
@@ -73,6 +70,11 @@ ion-content::part(background) {
 		background: #F6F2EF;
 		padding: 10px 0;
 	}
+}
+
+.monthCell {
+	color: #B3481E;
+	padding: 10% 0 5% 5%;
 }
 
 .sunday {
