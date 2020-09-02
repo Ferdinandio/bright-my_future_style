@@ -1,35 +1,37 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">Создать событие</ion-title>
-    <ion-button routerLink="/menu/calendar" fill="clear" slot="end">
-      <ion-icon name="close-outline"></ion-icon>
+<ion-header mode="ios" class="ion-padding ion-no-border">
+  <ion-toolbar class="ce-toolbar">
+    <ion-button routerLink="/menu/calendar" class="ce-button ion-no-padding" slot="end">
+      <ion-icon class="ce-img" name="close"></ion-icon>
     </ion-button>
+    <ion-label class="ce-title">
+      Создать событие
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item>
+<ion-content mode="ios">
+  <ion-list class="ion-padding-horizontal">
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Название мероприятия"></ion-input>
     </ion-item>
-    <ion-item lines="none">
-      <ion-toggle slot="start"></ion-toggle>
+    <ion-item class="ion-no-padding" lines="none">
+      <ion-toggle class="ce-toggle" slot="start"></ion-toggle>
       <ion-input placeholder="">Весь день</ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Дата начала"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Дата окончания"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Адрес проведения"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item class="ion-no-padding" lines="full">
       <ion-input placeholder="Описание"></ion-input>
     </ion-item>
 
-    <ion-button routerLink="/menu/calendar" class="ion-no-padding" shape="round" expand="block" class="ion-padding">
+    <ion-button routerLink="/menu/calendar" class="ce-save-button" shape="round" expand="block">
       Сохранить
     </ion-button>
   </ion-list>

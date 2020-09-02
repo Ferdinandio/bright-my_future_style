@@ -1,29 +1,26 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="calendar-header ion-no-border ion-padding">
+  <ion-toolbar routerLink="another-achievement" class="calendar-toolbar">
+    <ion-button routerLink="/menu" class="calendar-button ion-no-padding ion-no-margin">
+      <ion-img src="../../assets/icon/menu.svg" class="calendar-img"></ion-img>
+    </ion-button>
+    <ion-label class="calendar-label">
       Календарь
-    </ion-title>
-    
-    <ion-buttons slot="start">
-      <ion-button routerLink="/menu">
-        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item lines="none" class="ion-color grayItem">
+  <ion-item class="grayItem" lines="none">
     <ion-label>
-      <h1>4 Августа</h1>
-      <h1>2020</h1>
+      <ion-text class="calendar-titleDay bold">4 Августа</ion-text>
+      <ion-text class="calendar-titleYear bold">2020</ion-text>
     </ion-label>
-    <ion-button routerLink="create-event" class="ion-align-self-baseline" shape="round">
+    <ion-button routerLink="create-event" class="calendar-addBtn ion-no-padding ion-no-margin ion-align-self-baseline" shape="round">
       <ion-icon class="ion-no-margin bgrIcon" slot="end" name="add"></ion-icon>
     </ion-button>
   </ion-item>
   <ion-grid class="grid">
-    <ion-row>
+    <ion-row class="headCells">
       <ion-col class="headCell cell">ПН</ion-col>
       <ion-col class="headCell cell">ВТ</ion-col>
       <ion-col class="headCell cell">СР</ion-col>
@@ -35,7 +32,7 @@
     <ion-row>
       <ion-col class="monthCell cell"></ion-col>
       <ion-col class="monthCell cell"></ion-col>
-      <ion-col class="monthCell cell"><h4>Август</h4></ion-col>
+      <ion-col class="monthCell cell bold ion-justify-content-start"><ion-text>АВГУСТ</ion-text></ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="cell"></ion-col>
@@ -47,11 +44,11 @@
       <ion-col routerLink="create-event" class="calendarCell cell sunday">2</ion-col>
     </ion-row>
     <ion-row routerLink="create-event">
-      <ion-col class="calendarCell cell"><div class="cellMark">3</div></ion-col>
-      <ion-col class="calendarCell cell">4</ion-col>
+      <ion-col class="calendarCell cell cellMark"></ion-col>
+      <ion-col class="calendarCell cellToday cell">4</ion-col>
       <ion-col class="calendarCell cell">5</ion-col>
       <ion-col class="calendarCell cell">6</ion-col>
-      <ion-col class="calendarCell cellToday cell">7</ion-col>
+      <ion-col class="calendarCell cell">7</ion-col>
       <ion-col class="calendarCell cell">8</ion-col>
       <ion-col class="calendarCell cell sunday">9</ion-col>
     </ion-row>
@@ -96,7 +93,7 @@
     <ion-row>
       <ion-col class="monthCell cell"></ion-col>
       <ion-col class="monthCell cell"></ion-col>
-      <ion-col class="monthCell cell"><h4>Сентябрь</h4></ion-col>
+      <ion-col class="monthCell cell ion-justify-content-start"><ion-text>СЕНТЯБРЬ</ion-text></ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="cell"></ion-col>
@@ -148,7 +145,7 @@
     <ion-row>
       <ion-col class="monthCell cell"></ion-col>
       <ion-col class="monthCell cell"></ion-col>
-      <ion-col class="monthCell cell"><h4>Октябрь</h4></ion-col>
+      <ion-col class="monthCell cell ion-justify-content-start"><ion-text>ОКТЯБРЬ</ion-text></ion-col>
     </ion-row>
     <ion-row routerLink="create-event">
       <ion-col class="calendarCell cell">1</ion-col>
@@ -200,7 +197,7 @@
     <ion-row>
       <ion-col class="monthCell cell"></ion-col>
       <ion-col class="monthCell cell"></ion-col>
-      <ion-col class="monthCell cell"><h4>Ноябрь</h4></ion-col>
+      <ion-col class="monthCell cell ion-justify-content-start"><ion-text>НОЯБРЬ</ion-text></ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="cell"></ion-col>
@@ -252,7 +249,7 @@
     <ion-row>
       <ion-col class="monthCell cell"></ion-col>
       <ion-col class="monthCell cell"></ion-col>
-      <ion-col class="monthCell cell"><h4>Декабрь</h4></ion-col>
+      <ion-col class="monthCell cell ion-justify-content-start"><ion-text>ДЕКАБРЬ</ion-text></ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="cell"></ion-col>

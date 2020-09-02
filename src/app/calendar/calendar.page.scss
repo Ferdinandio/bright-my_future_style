@@ -1,16 +1,78 @@
+ion-content::part(background) {
+	background: #fff;
+}
+
+.calendar-header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-color: #F6F2EF;
+	background-position: top;
+	background-size: 123% 100px;
+	.calendar-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.calendar-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			.calendar-img {
+				filter: invert(1);
+			}
+		}
+		.calendar-label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 27%;
+			position: relative;
+			top: 5px;
+		}
+	}
+}
+
+.calendar-titleDay {
+	font-size: 20px;
+	color: #B3481E;
+}
+
+.calendar-titleYear {
+	font-size: 17px;
+	display: block;
+}
+
+.calendar-addBtn {
+	--background: #fff;
+	--box-shadow: 0;
+	width: 30px;
+	height: 30px;
+	margin-top: 11px;
+}
+
+.monthCell {
+	color: #B3481E;
+	padding: 10% 0 5% 5%;
+}
+
 .grid {
 	padding: 0;
+	margin-top: 110px;
 }
 
 .cell {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-weight: 600;
 }
-
-.headCell {
-	background: #eeeeee;
-	padding: 10px 0;
+.headCells {
+	position: fixed;
+	top: 179px;
+	z-index: 1;
+	width: 100%;
+	font-size: 13px;
+	.headCell {
+		background: #F6F2EF;
+		padding: 10px 0;
+	}
 }
 
 .sunday {
@@ -18,28 +80,41 @@
 }
 
 .bgrIcon {
-	background: #3880ff;
+	color: #B3481E;
+	height: 80%;
+	width: 80%;
 }
 
 .grayItem {
-	background: #eee;
+	background: #F6F2EF;
 	margin-bottom: 2px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .calendarCell {
-	border-top: 2px solid #bbb;
-	padding: 20px 5px;
+	border-top: 1px solid #777;
+	padding: 15px 5px 25px;
 }
 
 .cellMark {
+	background: #fff;
+	position: relative;
+}
+
+.cellMark::before {
+	content: '3';
+	color: #fff;
+	background: #B3481E;
+	width: 30px;
+	height: 30px;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 28px;
-	width: 28px;
 	border-radius: 50%;
-	background: #7c1818;
-	color: #fff;
+	font-size: 14px;
 }
 
 .cellToday {

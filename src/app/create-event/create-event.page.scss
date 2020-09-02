@@ -1,0 +1,44 @@
+ion-content::part(background) {
+	background: url(../../assets/prog-bg.png) no-repeat;
+	background-position: top;
+	background-size: 116% 600px;
+	margin-top: -76px;
+	background-color: #fff;
+}
+
+
+.ce-toolbar {
+	--background: rgba(0, 0, 0, 0);
+	.ce-button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background-hover: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 28px;
+    width: 28px;
+    margin: 0 0 9px;
+	}
+	.ce-title {
+    margin: 0 23% 0 auto;
+    font-size: 16px;
+    color: #faf7f7;
+    float: right;
+    position: relative;
+    top: -4px;
+	}
+}
+
+.ce-toggle {
+	--background-checked: #c33e01;
+	--handle-height: 18px;
+	--handle-width: 23px;
+	height: 22px;
+}
+
+.ce-save-button {
+	--background: #c33e01;
+	--background-activated: #aa3f0e;
+	--background-hover: #aa3f0e;
+	--color: #fff;
+	--box-shadow: 0px 10px 25px #c32d5d40;
+	margin: 16px 16px 30px;
+}
