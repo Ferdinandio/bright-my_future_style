@@ -7,28 +7,36 @@ ion-content::part(background) {
 }
 
 ion-back-button::part(native) {
-	position: absolute;
-	width: 28px;
+	--background-activated: rgba(0, 0, 0, 0);
+	--background-hover: rgba(0, 0, 0, 0);
+	--background: rgba(0, 0, 0, 0);
 	height: 28px;
-	top: 2px;
-	opacity: 0;
+	width: 28px;
 }
 
+ion-back-button::part(icon) {
+	content: url(../../assets/icon/arrow-white-back.png);
+	height: 14px;
+	width: 21px;
+}
 
-.po-toolbar {
-	--background: rgba(0, 0, 0, 0);
-	.po-button {
-    --background-activated: rgba(0, 0, 0, 0);
-    --background-hover: rgba(0, 0, 0, 0);
-    --background: rgba(0, 0, 0, 0);
-    height: 28px;
-    width: 28px;
-    margin: 0 0 9px;
-	}
-	.po-title {
-		margin-left: 14%;
-		font-size: 16px;
-		color: #faf7f7;
+.po-header {
+	padding: 10px 16px 16px;
+	.po-toolbar {
+		--background: rgba(0, 0, 0, 0);
+		.po-button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background-hover: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 28px;
+			width: 28px;
+			margin: 0 0 9px;
+		}
+		.po-title {
+			margin-left: 14%;
+			font-size: 16px;
+			color: #faf7f7;
+		}
 	}
 }
 
