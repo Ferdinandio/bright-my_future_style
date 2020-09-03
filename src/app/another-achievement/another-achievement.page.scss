@@ -76,6 +76,14 @@ ion-select::part(icon)::before {
 	z-index: 1;
 }
 
+ion-popover {
+	--background: #faf;
+}
+
+.my-custom-class {
+  --background: #222;
+}
+
 .ripple {
 	--ripple-color: rgba(0, 0, 0, 0);
 	--background-activated-opacity: 0;

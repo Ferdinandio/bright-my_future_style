@@ -1,17 +1,110 @@
-.question {
+ion-content::part(background) {
+	background-color: #faf7f7;
+}
+
+.testAnswer__header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-position: top;
+	background-size: 123% 100px;
+	background-color: #faf7f7;
+	.testAnswer__toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.testAnswer__button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 40px;
+			width: 50px;
+			margin: -5px 0 0 -9px;
+			.testAnswer__img {
+				position: relative;
+				left: -8px;
+				top: -2px;
+				filter: opacity(0.5);
+			}
+		}
+		.testAnswer__label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 15%;
+		}
+	}
+}
+
+.testAnswer__title {
+	background: #faf7f7;
+	font-weight: 900;
+	color: #c33e01;
+	font-size: 17px;
+	line-height: 23px;
+	// letter-spacing: -0.4px;
+}
+
+.testAnswer__subtitle {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	color: #222;
+}
+
+.testAnswer__btn {
+	--background: #B3481E;
+	--border-color: #b16d52;
+	--background-activated: #b16d52;
+	--background-hover: #b16d52;
+	--color: #FFE3D6;
+	--box-shadow: 0px 10px 25px #c32d5d40;
+}
+
+.testAnswer__btn-wrong {
+	--background: #F9F8F6;
+	--background-activated: #F9F8F6;
+	--border-color: #b16d52;
+	--color: #B3481E;
+	--box-shadow: 0px 10px 25px #c32d5d40;
+}
+
+.testAnswer__question {
 	margin: 20px 0;
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
-	min-height: 180px;
+	min-height: 165px;
 	background: #fff;
 }
 
-.question__request {
-	margin: 0;
-	padding-left: 90px;
-	white-space: pre-wrap;
+.testAnswer__question_badge {
+	--background: #50A561;
+	--color: #fff;
+	--padding-bottom: 3px;
+	--padding-top: 3px;
+	--padding-start: 11px;
+	--padding-end: 11px;
+	font-weight: 400;
 }
+
+.testAnswer__question_request {
+	white-space: pre-wrap;
+	line-height: 11px;
+	margin-left: auto;
+	max-width: 86px;
+	color: #aaa;
+	.testAnswer__question_request-text {
+		font-size: 12px;
+	}
+}
+
+.testAnswer__textarea {
+	font-size: 12px;
+	.testAnswer__textarea_text {
+		color: #aaa;
+    padding-top: 4px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+	}
+}
+
 
 .block {
 	display: block;
@@ -19,5 +112,9 @@
 
 .answer {
 	display: block;
-	margin-top: 30px;
+	margin-top: 20px;
+	color: #222;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
 }

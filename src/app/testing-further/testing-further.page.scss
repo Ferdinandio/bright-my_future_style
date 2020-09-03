@@ -1,14 +1,98 @@
-.question {
+ion-content::part(background) {
+	background-color: #faf7f7;
+}
+
+.testFurther__header {
+	background: url(../../assets/concept-bg.png) no-repeat;
+	background-position: top;
+	background-size: 123% 100px;
+	background-color: #faf7f7;
+	.testFurther__toolbar {
+		--background: rgba(0, 0, 0, 0);
+		margin-bottom: 30px;
+		.testFurther__button {
+			--background-activated: rgba(0, 0, 0, 0);
+			--background: rgba(0, 0, 0, 0);
+			height: 40px;
+			width: 50px;
+			margin: -5px 0 0 -9px;
+			.testFurther__img {
+				position: relative;
+				left: -8px;
+				top: -2px;
+				filter: opacity(0.5);
+			}
+		}
+		.testFurther__label {
+			font-size: 16px;
+			color: #fff;
+			margin-left: 15%;
+		}
+	}
+}
+
+.testFurther__title {
+	background: #faf7f7;
+	font-weight: 900;
+	color: #c33e01;
+	font-size: 17px;
+	line-height: 23px;
+	// letter-spacing: -0.4px;
+}
+
+.testFurther__subtitle {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	color: #222;
+}
+
+.testFurther__btn {
+	--background: #B3481E;
+	--background-activated: #b16d52;
+	--background-hover: #b16d52;
+	--color: #FFE3D6;
+	--box-shadow: 0px 10px 25px #c32d5d40;
+}
+
+.testFurther__question {
 	margin: 20px 0;
 	border-radius: 10px;
 	overflow: hidden;
 	width: 100%;
-	min-height: 180px;
+	min-height: 150px;
 	background: #fff;
 }
 
-.question__request {
-	margin: 0;
-	padding-left: 90px;
+.testFurther__question_badge {
+	--background: #50A561;
+	--color: #fff;
+	--padding-bottom: 3px;
+	--padding-top: 3px;
+	--padding-start: 11px;
+	--padding-end: 11px;
+	font-weight: 400;
+}
+
+.testFurther__question_request {
 	white-space: pre-wrap;
+	line-height: 11px;
+	margin-left: auto;
+	max-width: 86px;
+	color: #aaa;
+	.testFurther__question_request-text {
+		font-size: 12px;
+	}
+}
+
+.testFurther__textarea {
+	font-size: 12px;
+	padding-right: 22px;
+	.testFurther__textarea_text {
+		--placeholder-color: #444;
+    padding-top: 4px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+	}
 }

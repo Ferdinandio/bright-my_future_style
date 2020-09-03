@@ -1,0 +1,32 @@
+ion-content::part(background) {
+	background: url(../../assets/prog-bg.png) no-repeat;
+	background-position: top;
+	background-size: 116% 600px;
+	margin-top: -76px;
+	background-color: #fff;
+}
+
+
+.mc-toolbar {
+	--background: rgba(0, 0, 0, 0);
+	.mc-button {
+    --background-activated: rgba(0, 0, 0, 0);
+    --background-hover: rgba(0, 0, 0, 0);
+    --background: rgba(0, 0, 0, 0);
+    height: 28px;
+    width: 28px;
+    margin: 0 0 9px;
+	}
+	.mc-title {
+		margin-left: 10%;
+		font-size: 16px;
+		color: #faf7f7;
+	}
+}
+
+.mc-btn {
+	--background: #c33e01;
+	--background-activated: #aa3f0e;
+	--background-hover: #aa3f0e;
+	--color: #fff;
+}

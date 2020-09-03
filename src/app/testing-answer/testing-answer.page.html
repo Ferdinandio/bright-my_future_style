@@ -1,50 +1,40 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="testAnswer__header ion-no-border">
+  <ion-toolbar class="testAnswer__toolbar ion-padding">
+    <ion-button routerLink="/course-preview/concept/testing/testing-further" class="testAnswer__button">
+      <ion-img src="../../assets/icon/arrow-white-back.png" class="testAnswer__img"></ion-img>
+    </ion-button>
+    <ion-label class="testAnswer__label">
       Тестирование
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
+<ion-content mode="ios" class="ion-padding">
 
-<ion-content color="light" class="ion-padding">
-  <ion-label>
+  <ion-label class="testAnswer__title">Вводный курс для муниципальных координаторов программ наставничества молодежи в ТСЖ</ion-label>
+  <ion-text class="testAnswer__subtitle">Концепция наставничества</ion-text>
 
-    Вводный курс для муниципальных координаторов программ наставничества молодежи в ТСЖ
-
-  </ion-label>
-  <p>Концепция наставничества</p>
-
-  <div class="question">
-    <ion-item>
-      <ion-badge>Вопрос 1</ion-badge>
-      <ion-label slot="end" class="question__request">
-        <ion-text>
-          <p>
-            <small>Напишите свой вариант ответа</small>
-          </p>
-        </ion-text>
+  <div class="testAnswer__question">
+    <ion-item lines="full">
+      <ion-badge class="testAnswer__question_badge">Вопрос 1</ion-badge>
+      <ion-label class="testAnswer__question_request">
+        <ion-text class="testAnswer__question_request-text">Напишите свой вариант ответа</ion-text>
       </ion-label>
     </ion-item>
-    <ion-item lines="full">
-      <ion-label rows="5"
-                readonly
-                placeholder="">
-        <ion-text color="medium" class="block pre-wrap">Сформулируйте еще 1-2 обязательных признака наставника, о которых не сказано в онлайн-консультации.</ion-text>
-        <ion-text class="answer pre-wrap smallFont">
+    <ion-item class="testAnswer__textarea" lines="full">
+      <ion-label>
+        <ion-text class="testAnswer__textarea_text block pre-wrap">Сформулируйте еще 1-2 обязательных признака наставника, о которых не сказано в онлайн-консультации.</ion-text>
+        <ion-text class="answer pre-wrap">
           Доброта и скептицизм
         </ion-text>
       </ion-label>
     </ion-item>
   </div>
-  <ion-button routerLink="/menu" class="ion-padding-horizontal" expand="block" shape="round">
+
+  <ion-button routerLink="/course-preview/concept/testing/testing-further" class="testAnswer__btn ion-padding" expand="block" shape="round" fill="outline">
     Правильно
   </ion-button>
-  <ion-button routerLink="/menu" class="ion-padding-horizontal" expand="block" shape="round">
+  <ion-button routerLink="/course-preview/concept/testing/testing-further" class="testAnswer__btn-wrong ion-padding" expand="block" shape="round" fill="outline">
     Не правильно
   </ion-button>
 </ion-content>

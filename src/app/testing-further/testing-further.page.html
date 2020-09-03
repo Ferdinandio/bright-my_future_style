@@ -1,42 +1,36 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title class="ion-text-center ion-no-padding">
+<ion-header mode="ios" class="testFurther__header ion-no-border">
+  <ion-toolbar class="testFurther__toolbar ion-padding">
+    <ion-button routerLink="/course-preview/concept/testing" class="testFurther__button">
+      <ion-img src="../../assets/icon/arrow-white-back.png" class="testFurther__img"></ion-img>
+    </ion-button>
+    <ion-label class="testFurther__label">
       Тестирование
-    </ion-title>
-
-    <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
-    </ion-buttons>
+    </ion-label>
   </ion-toolbar>
 </ion-header>
 
+<ion-content mode="ios" class="ion-padding">
 
-<ion-content color="light" class="ion-padding">
-  <ion-label>
+  <ion-label class="testFurther__title clearSans">Вводный курс для муниципальных координаторов программ наставничества молодежи в ТСЖ</ion-label>
+  <ion-text class="testFurther__subtitle clearSans">Концепция наставничества</ion-text>
 
-    Вводный курс для муниципальных координаторов программ наставничества молодежи в ТСЖ
-
-  </ion-label>
-  <p>Концепция наставничества</p>
-
-  <div class="question">
-    <ion-item>
-      <ion-badge>Вопрос 1</ion-badge>
-      <ion-label slot="end" class="question__request">
-        <ion-text>
-          <p>
-            <small>Напишите свой вариант ответа</small>
-          </p>
-        </ion-text>
+  <div class="testFurther__question">
+    <ion-item lines="full">
+      <ion-badge class="testFurther__question_badge clearSans">Вопрос 1</ion-badge>
+      <ion-label class="testFurther__question_request">
+        <ion-text class="testFurther__question_request-text clearSans">Напишите свой вариант ответа</ion-text>
       </ion-label>
     </ion-item>
-    <ion-item>
-      <ion-textarea rows="5"
+    <ion-item class="testFurther__textarea">
+      <ion-textarea
+        class="testFurther__textarea_text clearSans"
+        rows="5"
         placeholder="Сформулируйте еще 1-2 обязательных признака наставника, о которых не сказано в онлайн-консультации.">
       </ion-textarea>
     </ion-item>
   </div>
-  <ion-button routerLink="testing-answer" class="ion-padding-horizontal" expand="block" shape="round">
+
+  <ion-button routerLink="testing-answer" class="testFurther__btn clearSans ion-padding" expand="block" shape="round">
     Отправить на проверку
   </ion-button>
 </ion-content>
