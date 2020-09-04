@@ -52,6 +52,23 @@
 	top: 15px;
 }
 
+// popover
+
+:root {
+	.popover-content {
+		--background: #fff;
+		--min-width: 250px;
+	}
+	.popover-arrow {
+		--background: #fff;
+	}
+	.sc-ion-select-popover {
+		color: #222;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
 // background-opacity
 
 ion-item, ion-list, .list-ios {
