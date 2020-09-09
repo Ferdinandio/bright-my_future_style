@@ -57,15 +57,12 @@ ion-content::part(background) {
 			align-content: flex-start;
 			.user-name {
 				margin-top: 55px;
+				margin-bottom: 15px;
 				font-weight: 600;
 				letter-spacing: 0.4px;
 				line-height: 19px;
 				width: 100%;
 				color: #222;
-			}
-			.user-status {
-				font-size: 12px;
-				width: 100%;
 			}
 			.user-number {
 				color: #c33e01;
@@ -92,9 +89,5 @@ ion-content::part(background) {
 			border-radius: 2px;
 			color: #fdb88a;
 		}
-	}
-
-	.margin-top-further {
-		margin-top: -4px;
 	}
 }
