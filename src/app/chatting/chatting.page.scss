@@ -74,7 +74,7 @@ ion-content::part(background) {
 }
 
 .chatting-flexWrapper {
-	height: 100%;
+	height: fit-content;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-end;

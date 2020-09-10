@@ -39,10 +39,10 @@ ion-content::part(background) {
 }
 
 ion-select {
-	width: 100%;
-	justify-content: center;
+	min-width: 175px;
+	justify-content: space-between;
 	background: #fff;
-	padding: 0 93px 0 80px;
+	padding: 0 10px;
 	border-radius: 10px;
 	margin-left: calc(100% - 240px);
 }

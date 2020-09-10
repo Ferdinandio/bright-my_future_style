@@ -42,10 +42,26 @@ ion-content::part(background) {
 
 .calendar-addBtn {
 	--background: #fff;
+	--background-activated: #B3481E;
 	--box-shadow: 0;
 	width: 30px;
 	height: 30px;
 	margin-top: 11px;
+}
+
+.calendar-addBtn:hover {
+	--background: #B3481E;
+}
+
+.calendar-addBtn:hover .bgrIcon {
+	color: #fff;
+	background: #B3481E;
+}
+
+.bgrIcon {
+	color: #B3481E;
+	height: 80%;
+	width: 80%;
 }
 
 .grid {
@@ -81,12 +97,6 @@ ion-content::part(background) {
 	color: #bbb
 }
 
-.bgrIcon {
-	color: #B3481E;
-	height: 80%;
-	width: 80%;
-}
-
 .grayItem {
 	background: #F6F2EF;
 	margin-bottom: 2px;
@@ -117,6 +127,7 @@ ion-content::part(background) {
 	align-items: center;
 	border-radius: 50%;
 	font-size: 14px;
+	line-height: 14px;
 }
 
 .cellToday {

@@ -4,6 +4,7 @@ ion-content::part(background) {
 
 .choose-toolbar {
 	--background: #c33e01;
+	width: calc(100% + 2px);
 }
 
 .choose-label {
