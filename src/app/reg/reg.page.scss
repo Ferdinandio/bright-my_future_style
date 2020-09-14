@@ -16,7 +16,6 @@ ion-content::part(scroll) {
 		--background-activated: #973207;
 		--background-hover: #973207;
 		--color: #fff;
-		font-family: "ClearSans";
 	}
 	.btn-reg::part(native) {
 		color: #fff;
@@ -24,7 +23,6 @@ ion-content::part(scroll) {
 	.btn-cancel {
 		margin-bottom: 8px;
 		--color: #973207;
-		font-family: "ClearSans";
 	}
 }
 
@@ -40,7 +38,6 @@ ion-content::part(scroll) {
 			.headerFont {
 				font-size: medium;
 				color: #FF7425;
-				font-family: "ClearSans";
 				line-height: 26px;
 			}
 		}
@@ -50,11 +47,17 @@ ion-content::part(scroll) {
 		--color: #fff;
 		--min-height: 43px;
 		--border-color: #fff;
+		position: relative;
 		font-size: medium;
 		.input {
 			--background: rgba(0, 0, 0, 0);
 			--color: #fff;
 			--padding-top: 15px;
+		}
+		.eye {
+			position: absolute;
+			right: 0;
+			bottom: 12px;
 		}
 	}
 	.item-bg {
@@ -64,12 +67,6 @@ ion-content::part(scroll) {
 		--checkmark-width: 3px;
 		--background-checked: #fff;
 	}
-}
-
-
-
-.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h {
-	font-family: "ClearSans";
 }
 
 .items::part(native) {
