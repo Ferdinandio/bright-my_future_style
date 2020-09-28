@@ -11,86 +11,33 @@
 
 <ion-content mode="ios">
   <ion-list class="ion-padding-horizontal">
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
+    <ion-item lines="none">
       <ion-label>
-        <div class="dark pre-wrap">Методика Берга</div>
-        <p class="mp-p">1000 р</p>
+        <ion-text class="smallFont pre-wrap block ion-margin-bottom">Добрый день! Мы рады, что вы решили применить полученные знания на практике. Для этого вам необходимо:</ion-text>
+        <ion-text class="smallFont pre-wrap block ion-margin-bottom">*прикрепить документы (перечислить список документов) в личном кабинете пользователя;</ion-text>
+        <ion-text class="smallFont pre-wrap block ion-margin-bottom">*выбрать роль (наставник, тьютор, координатор), в которой вы хотели бы принять учасите в практике и отправить информацию в чат тех.поддержки;</ion-text>
+        <ion-text class="smallFont pre-wrap block ion-margin-bottom">*далее, ожидайте присвоение вам роли и прикрепление партнеров.</ion-text>
       </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
     </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Длинное название методики</div>
-        <p class="mp-p">1000 р</p>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Роль</ion-label>
+      <ion-input class="mp-inputRole ion-no-padding" placeholder="наставник, тьютор или координатор"></ion-input>
+    </ion-item>
+    
+    <ion-input class="mp-input load-doc-btn" readonly>
+      <ion-img src="../../assets/icon/doc.svg" class="cloud"></ion-img>
+      <ion-label class="mp-label">
+        <ion-text class="mp-text">document.png</ion-text>
+        <ion-text class="mp-text size-doc">1756 Кб</ion-text>
+        <ion-input class="docLoad ion-padding" type="file" multiple="true"></ion-input>
       </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
-    <ion-item routerLink="prog-overview" class="ion-no-padding" lines="full" detail="false">
-      <ion-label>
-        <div class="dark pre-wrap">Название методики</div>
-        <p class="mp-p">1000 р</p>
-      </ion-label>
-      <ion-button routerLink="prog-overview" class="btn_orangeFont ion-no-padding ion-no-margin" fill="clear" slot="end">
-        Посмотреть
-      </ion-button>
-    </ion-item>
+      <ion-img src="../../assets/icon/edit-doc.svg"></ion-img>
+    </ion-input>
+
+
+    <ion-button (click)="presentToast()" routerLink="/menu" class="send-button" shape="round" expand="block">
+      Отправить
+    </ion-button>
   </ion-list>
 </ion-content>
