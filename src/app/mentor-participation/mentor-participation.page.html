@@ -20,9 +20,12 @@
       </ion-label>
     </ion-item>
 
-    <ion-item lines="full">
-      <ion-label position="floating">Роль</ion-label>
-      <ion-input class="mp-inputRole ion-no-padding" placeholder="наставник, тьютор или координатор"></ion-input>
+    <ion-item lines="full" class="ion-no-padding">
+      <ion-select class="mp-select" placeholder="Роль" interface="popover">
+        <ion-select-option>Наставник</ion-select-option>
+        <ion-select-option>Тьютор</ion-select-option>
+        <ion-select-option>Координатор</ion-select-option>
+      </ion-select>
     </ion-item>
     
     <ion-input class="mp-input load-doc-btn" readonly>
